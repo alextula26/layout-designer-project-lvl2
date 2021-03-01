@@ -1,0 +1,52 @@
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  color: #cacaca;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+
+  background-color: #08020d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 90px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    text-transform: uppercase;
+  }
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 57px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  h2 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
