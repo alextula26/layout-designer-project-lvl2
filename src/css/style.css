@@ -1,14 +1,29 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-weight: 500;
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-weight: 700;
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.ttf");
+}
 html,
 body {
   min-height: 100vh;
 }
 
 body {
+  overflow-x: hidden;
   color: #cacaca;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
-
   background-color: #08020d;
 }
 
@@ -17,14 +32,20 @@ body {
   padding: 0;
 }
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 h1 {
   font-weight: bold;
   font-size: 60px;
   line-height: 90px;
   text-transform: uppercase;
+  color: #fff;
 }
-
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   h1 {
     font-weight: bold;
     font-size: 30px;
@@ -34,19 +55,80 @@ h1 {
 }
 
 h2 {
+  margin-bottom: 48px;
   font-weight: bold;
   font-size: 38px;
   line-height: 57px;
   text-transform: uppercase;
+  color: #fff;
 }
-
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   h2 {
     font-weight: bold;
     font-size: 18px;
     line-height: 27px;
     text-transform: uppercase;
   }
+}
+
+h3 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+}
+
+.container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.similar-artists {
+  padding: 100px 0;
+}
+.similar-artists .similar-artists-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.similar-artists .similar-item {
+  flex: 0 0 25%;
+  width: 25%;
+  margin-bottom: 25px;
+  padding-right: 50px;
+}
+@media (max-width: 767px) {
+  .similar-artists .similar-item {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+}
+.similar-artists .similar-item img {
+  width: 100%;
+  margin-bottom: 17px;
+}
+
+.grey {
+  color: #e0e0e0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.lh-24 {
+  line-height: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
