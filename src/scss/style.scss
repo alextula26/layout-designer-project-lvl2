@@ -1,3 +1,5 @@
+$white: #fff;
+
 @font-face {
   font-weight: 400;
   font-family: "Roboto";
@@ -43,15 +45,12 @@ body {
   box-sizing: border-box;
 }
 
-
-
 h1 {
+  color: $white;
   font-weight: bold;
   font-size: 60px;
   line-height: 90px;
   text-transform: uppercase;
-
-  color: #fff;
 
   @media (max-width: 767px) {
     font-weight: bold;
@@ -64,12 +63,12 @@ h1 {
 h2 {
   margin-bottom: 48px;
 
+  color: $white;
+
   font-weight: bold;
   font-size: 38px;
   line-height: 57px;
   text-transform: uppercase;
-
-  color: #fff;
 
   @media (max-width: 767px) {
     font-weight: bold;
@@ -82,19 +81,40 @@ h2 {
 h3 {
   margin: 0;
 
+  color: $white;
+
   font-weight: bold;
   font-size: 18px;
   line-height: 27px;
+}
 
-  color: #fff;
+header {
+  position: relative;
+
+  background: url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .page-description {
+    padding: 200px 0;
+
+    text-align: center;
+  }
+
+  .form {
+    max-width: 570px;
+
+    margin: 0 auto;
+  }
 }
 
 .container {
   position: relative;
-  
+
   width: 1200px;
 
-  margin: 0 auto;  
+  margin: 0 auto;
 
   @media (max-width: 767px) {
     width: 100%;
@@ -121,7 +141,7 @@ h3 {
     @media (max-width: 767px) {
       flex: 0 0 50%;
       width: 50%;
-    }    
+    }
 
     img {
       width: 100%;
@@ -129,6 +149,45 @@ h3 {
       margin-bottom: 17px;
     }
   }
+}
+
+.form-control {
+  min-width: 270px;
+  height: 50px;
+
+  margin-bottom: 1.5rem;
+  padding-left: 20px;
+
+  font-weight: 700;
+
+  font-size: 14px;
+  line-height: 50px;
+
+  background: none;
+
+  border: 2px solid #cacaca;
+  border-radius: 3px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.col-50 {
+  flex: 0 0 auto;
+  width: 50%;
 }
 
 .grey {
@@ -145,4 +204,51 @@ h3 {
 
 .lh-24 {
   line-height: 24px;
+}
+
+.white {
+  color: $white;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 21px 0;
+
+  color: $white;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  border: 0;
+  border-radius: 5px;
+}
+
+.btn-green {
+  background-color: #34c176;
+}
+
+::-webkit-input-placeholder {
+  color: $white;
+}
+
+::-ms-input-placeholder {
+  color: $white;
+}
+
+::-moz-placeholder {
+  color: $white;
+}
+
+:-moz-placeholder {
+  color: $white;
+}
+
+:-ms-input-placeholder {
+  color: $white;
+}
+
+::placeholder {
+  color: $white;
 }
