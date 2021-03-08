@@ -1,0 +1,155 @@
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+
+  color: $dark-grey;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+
+  background-color: $dark;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  margin: 0;
+
+  color: $white;
+
+  font-weight: bold;
+}
+
+h1,
+h2,
+.h1,
+.h2 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: $font-size-60;
+  line-height: $line-height-90;
+
+  @media (max-width: 767px) {
+    font-size: $font-size-30;
+    line-height: $line-height-45;
+  }
+}
+
+h2 {
+  font-size: $font-size-38;
+  line-height: $line-height-57;
+
+  @media (max-width: 767px) {
+    font-size: $font-size-18;
+    line-height: $line-height-27;
+  }
+}
+
+h3 {
+  font-size: $font-size-18;
+  line-height: $line-height-27;
+}
+
+.container {
+  position: relative;
+
+  width: 1200px;
+
+  margin: 0 auto;
+
+  @media (max-width: 767px) {
+    width: 100%;
+
+    padding: 0 20px;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: $white;
+}
+
+::-ms-input-placeholder {
+  color: $white;
+}
+
+::-moz-placeholder {
+  color: $white;
+}
+
+:-moz-placeholder {
+  color: $white;
+}
+
+:-ms-input-placeholder {
+  color: $white;
+}
+
+::placeholder {
+  color: $white;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 0 0%;
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fs-16 {
+  font-size: $font-size-16;
+}
+
+.lh-24 {
+  line-height: $line-height-24;
+}
+
+.white {
+  color: $white;
+}
+
+.grey {
+  color: $grey;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}

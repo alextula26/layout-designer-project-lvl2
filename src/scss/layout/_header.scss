@@ -1,0 +1,32 @@
+header {
+  position: relative;
+
+  background: url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .page-description {
+    padding: 200px 0;
+
+    p {
+      margin-top: 32px;
+
+      @media (max-width: 767px) {
+        margin-top: 16px;
+      }
+    }
+  }
+
+  .form {
+    max-width: 570px;
+
+    margin: 0 auto;
+
+    input {
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
+}
