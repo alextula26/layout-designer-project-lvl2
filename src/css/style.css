@@ -58,7 +58,7 @@ h1 {
   line-height: 90px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   h1 {
     font-size: 30px;
     line-height: 45px;
@@ -70,7 +70,7 @@ h2 {
   line-height: 57px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   h2 {
     font-size: 18px;
     line-height: 27px;
@@ -85,13 +85,13 @@ h3 {
 .container {
   position: relative;
 
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .container {
-    width: 100%;
+    max-width: 100%;
     padding: 0 20px;
   }
 }
@@ -128,9 +128,12 @@ h3 {
   flex-wrap: wrap;
 }
 
-.col {
-  flex: 1 0 0%;
-  max-width: 100%;
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-center {
@@ -155,6 +158,10 @@ h3 {
 
 .mb-16 {
   margin-bottom: 16px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
 }
 
 @font-face {
@@ -192,7 +199,7 @@ header .page-description p {
   margin-top: 32px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   header .page-description p {
     margin-top: 16px;
   }
@@ -203,9 +210,19 @@ header .form {
   margin: 0 auto;
 }
 
-@media (max-width: 767px) {
+header .form .col {
+  flex: 1 0 50%;
+}
+
+@media (max-width: 576px) {
+  header .form .col {
+    flex: 1 0 100%;
+  }
+}
+
+@media (max-width: 576px) {
   header .form input {
-    width: 100%;
+    min-width: 100%;
   }
 }
 
