@@ -275,14 +275,22 @@ header .form .col {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 16px;
+  text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
 
   border: 0;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .btn-green {
   background-color: #34c176;
+}
+
+.btn-white {
+  background-color: none;
+  border: 1px solid #fff;
 }
 
 .form-control {
@@ -342,8 +350,6 @@ header .form .col {
   flex: 0 0 33.3333333333%;
   max-width: 33.3333333333%;
   padding: 0 25px;
-
-  border-radius: 1rem;
 }
 
 .pricing .pricing-item .pricing-item-content {
@@ -352,6 +358,7 @@ header .form .col {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
+  border-radius: 1rem;
 }
 
 .pricing .pricing-item .pricing-item-content h3 {
