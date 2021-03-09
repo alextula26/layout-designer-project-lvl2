@@ -37,20 +37,36 @@ section {
 h1,
 h2,
 h3,
+h4,
 .h1,
 .h2,
-.h3 {
-  margin: 0;
-
+.h3,
+.h4 {
   color: $white;
-
-  font-weight: bold;
 }
 
 h1,
 h2,
+h4,
 .h1,
-.h2 {
+.h2,
+.h4 {
+  font-weight: 700;
+}
+
+h3,
+.h3 {
+  font-weight: 400;
+
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
   text-transform: uppercase;
 }
 
@@ -75,6 +91,16 @@ h2 {
 }
 
 h3 {
+  font-size: $font-size-24;
+  line-height: $line-height-45;
+
+  @media (max-width: 575px) {
+    font-size: $font-size-16;
+    line-height: $line-height-24;
+  }
+}
+
+h4 {
   font-size: $font-size-18;
   line-height: $line-height-27;
 }
@@ -159,4 +185,16 @@ h3 {
 
 .mb-48 {
   margin-bottom: 48px;
+}
+
+.bg-free {
+  background: url("../images/subscribe_1.png");
+}
+
+.bg-standart {
+  background: url("../images/subscribe_2.png");
+}
+
+.bg-premium {
+  background: url("../images/subscribe_3.png");
 }
