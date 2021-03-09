@@ -5,12 +5,18 @@
 .pricing {
   margin: 0 -25px;
   padding-top: 49px;
-  padding-bottom: 39px;
 
   .pricing-item {
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
-    padding: 0 25px;    
+
+    margin-bottom: 39px;
+    padding: 0 25px;
+
+    @media (max-width: 575px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
 
     .pricing-item-content {
       padding: 1.5rem;
