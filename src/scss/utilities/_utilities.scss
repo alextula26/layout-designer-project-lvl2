@@ -1,0 +1,59 @@
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.fs-16 {
+  font-size: $font-size-16;
+}
+
+.lh-24 {
+  line-height: $line-height-24;
+}
+
+.white {
+  color: $white;
+}
+
+.grey {
+  color: $grey;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.bg-free {
+  background: url("../images/subscribe_1.png");
+}
+
+.bg-standart {
+  background: url("../images/subscribe_2.png");
+}
+
+.bg-premium {
+  background: url("../images/subscribe_3.png");
+}
