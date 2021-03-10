@@ -21,6 +21,8 @@
     .pricing-item-content {
       padding: 1.5rem;
 
+      color: $white;
+
       background-repeat: no-repeat;
 
       background-position: 0 0;
@@ -32,12 +34,34 @@
         margin-bottom: 200px;
       }
 
+      .pricing-value {
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 24px;
+
+        .price {
+          margin-right: 16px;
+
+          font-size: $font-size-64;
+          line-height: 1em;
+        }
+
+        .currency {
+          padding-top: 10px;
+
+          font-size: $font-size-32;
+          line-height: 1em;
+
+          text-transform: uppercase;
+        }
+      }
+
       .pricing-footer {
         margin-top: 64px;
 
-        color: $white;
-        font-size: 13px;
-        line-height: 20px;
+        font-size: $font-size-13;
+        line-height: $line-height-20;
         text-align: center;
       }
     }

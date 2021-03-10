@@ -299,6 +299,7 @@ header .form .col {
   margin-bottom: 1.5rem;
   padding-left: 20px;
 
+  color: #fff;
   font-weight: 700;
   font-size: 14px;
   line-height: 50px;
@@ -362,6 +363,8 @@ header .form .col {
 .pricing .pricing-item .pricing-item-content {
   padding: 1.5rem;
 
+  color: #fff;
+
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -372,10 +375,30 @@ header .form .col {
   margin-bottom: 200px;
 }
 
+.pricing .pricing-item .pricing-item-content .pricing-value {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.pricing .pricing-item .pricing-item-content .pricing-value .price {
+  margin-right: 16px;
+
+  font-size: 64px;
+  line-height: 1em;
+}
+
+.pricing .pricing-item .pricing-item-content .pricing-value .currency {
+  padding-top: 10px;
+
+  font-size: 32px;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
 .pricing .pricing-item .pricing-item-content .pricing-footer {
   margin-top: 64px;
 
-  color: #fff;
   font-size: 13px;
   line-height: 20px;
   text-align: center;
