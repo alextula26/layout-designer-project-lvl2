@@ -301,18 +301,31 @@ header .form button {
   display: inline-block;
   padding: 16px 30px;
 
-  color: #fff;
+  color: #cacaca;
   font-size: 13px;
   font-family: "Roboto", sans-serif;
   line-height: 16px;
   text-align: center;
-  text-transform: uppercase;
   text-decoration: none;
 
   background-color: transparent;
   border: 1px solid transparent;
+  border-color: #cacaca;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-lg {
+  padding: 20px 30px;
+}
+
+.btn-radius {
+  border-radius: 32px;
 }
 
 .btn-green {
@@ -334,25 +347,6 @@ header .form button {
 
   background-color: #95390c;
   border-color: #95390c;
-}
-
-.btn-outline-white {
-  color: #cacaca;
-
-  border-color: #cacaca;
-}
-
-.btn-block {
-  display: block;
-  width: 100%;
-}
-
-.btn-lg {
-  padding: 20px 30px;
-}
-
-.btn-radius {
-  border-radius: 32px;
 }
 
 .form-control {
@@ -499,16 +493,8 @@ header .form button {
   text-align: center;
 }
 
-.text-lowercase {
-  text-transform: lowercase;
-}
-
-.fs-16 {
-  font-size: 16px;
-}
-
-.lh-24 {
-  line-height: 24px;
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 .white {
