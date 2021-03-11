@@ -321,10 +321,14 @@ header .form button {
 }
 
 .btn-lg {
-  padding: 20px 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.btn-radius {
+.btn-lg-radius {
+  padding-right: 40px;
+  padding-left: 40px;
+
   border-radius: 32px;
 }
 
