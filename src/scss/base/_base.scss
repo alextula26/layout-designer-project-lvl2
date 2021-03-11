@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
 
   color: $dark-grey;
-  font-size: 18px;
+  font-size: $font-size-16;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
 
@@ -34,6 +34,17 @@ section {
   display: block;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+
+  vertical-align: middle;
+}
+
+p {
+  padding-bottom: 16px;
+}
+
 h1,
 h2,
 h3,
@@ -52,6 +63,11 @@ h4,
 .h2,
 .h4 {
   font-weight: 700;
+}
+
+h2,
+.h2 {
+  margin-bottom: 48px;
 }
 
 h3,
@@ -170,6 +186,15 @@ section {
     flex: 0 0 100%;
     max-width: 100%;
   }
+}
+
+.column {
+  column-count: 2;
+  column-gap: 30px;
+}
+
+.break-after-column {
+  break-after: column;
 }
 
 ::-webkit-input-placeholder {

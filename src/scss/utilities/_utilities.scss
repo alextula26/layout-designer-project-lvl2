@@ -18,16 +18,8 @@
   text-align: center;
 }
 
-.text-lowercase {
-  text-transform: lowercase;
-}
-
-.fs-16 {
-  font-size: $font-size-16;
-}
-
-.lh-24 {
-  line-height: $line-height-24;
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 .white {
@@ -42,8 +34,16 @@
   margin-bottom: 16px;
 }
 
+.mb-25 {
+  margin-bottom: 25px;
+}
+
 .mb-48 {
   margin-bottom: 48px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
 }
 
 .bg-free {

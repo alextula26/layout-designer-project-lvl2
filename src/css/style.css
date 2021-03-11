@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
 
   color: #cacaca;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
 
@@ -34,6 +34,17 @@ section {
   display: block;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+
+  vertical-align: middle;
+}
+
+p {
+  padding-bottom: 16px;
+}
+
 h1,
 h2,
 h3,
@@ -52,6 +63,11 @@ h4,
 .h2,
 .h4 {
   font-weight: 700;
+}
+
+h2,
+.h2 {
+  margin-bottom: 48px;
 }
 
 h3,
@@ -182,6 +198,15 @@ section {
   }
 }
 
+.column {
+  column-count: 2;
+  column-gap: 30px;
+}
+
+.break-after-column {
+  break-after: column;
+}
+
 ::-webkit-input-placeholder {
   color: #fff;
 }
@@ -237,13 +262,13 @@ header .page-description {
   padding: 200px 0;
 }
 
-header .page-description p {
-  margin-top: 32px;
+header .page-description h2 {
+  margin-bottom: 32px;
 }
 
 @media (max-width: 576px) {
-  header .page-description p {
-    margin-top: 16px;
+  header .page-description h2 {
+    margin-bottom: 16px;
   }
 }
 
@@ -326,6 +351,10 @@ header .form button {
   padding: 20px 30px;
 }
 
+.btn-radius {
+  border-radius: 32px;
+}
+
 .form-control {
   min-width: 270px;
   height: 50px;
@@ -342,21 +371,9 @@ header .form button {
   border-radius: 3px;
 }
 
-.similar-artists {
-  padding-top: 49px;
-}
-
-.similar-artists .similar-item {
-  margin-bottom: 25px;
-}
-
 .similar-artists .similar-item img {
   width: 100%;
   margin-bottom: 17px;
-}
-
-.pricing {
-  padding-top: 49px;
 }
 
 .pricing .pricing-item {
@@ -405,10 +422,6 @@ header .form button {
   font-size: 13px;
   line-height: 20px;
   text-align: center;
-}
-
-.news {
-  padding-top: 49px;
 }
 
 .news .news-item {
@@ -510,8 +523,16 @@ header .form button {
   margin-bottom: 16px;
 }
 
+.mb-25 {
+  margin-bottom: 25px;
+}
+
 .mb-48 {
   margin-bottom: 48px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
 }
 
 .bg-free {

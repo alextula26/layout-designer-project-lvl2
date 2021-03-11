@@ -9,11 +9,11 @@ header {
   .page-description {
     padding: 200px 0;
 
-    p {
-      margin-top: 32px;
+    h2 {
+      margin-bottom: 32px;
 
       @media (max-width: 576px) {
-        margin-top: 16px;
+        margin-bottom: 16px;
       }
     }
   }
