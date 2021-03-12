@@ -45,8 +45,25 @@ p {
   padding-bottom: 16px;
 }
 
-hr,
-.hr {
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    &,
+    a {
+      color: $grey;
+      text-decoration: none;
+    }
+  }
+}
+
+hr {
   height: 1px;
 
   font-size: 1px;

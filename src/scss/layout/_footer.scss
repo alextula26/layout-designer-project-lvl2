@@ -16,28 +16,15 @@ footer {
     text-transform: uppercase;
   }
 
-  ul {
-    margin-bottom: 74px;
-
-    li {
-      list-style: none;
-
-      &,
-      a {
-        color: $grey;
-        text-decoration: none;
-      }
-    }
+  hr {
+    margin-top: 74px;
   }
 
-  ul.bottom-menu {
-    display: flex;
-    flex-wrap: wrap;
+  .bottom-menu li {
+    margin-right: 15px;
+  }
 
-    margin: 0;
-
-    li {
-      margin-right: 15px;
-    }
+  .social a {
+    margin-right: 24px;
   }
 }

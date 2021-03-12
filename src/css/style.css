@@ -45,8 +45,25 @@ p {
   padding-bottom: 16px;
 }
 
-hr,
-.hr {
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+ul li,
+ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+hr {
   height: 1px;
 
   font-size: 1px;
@@ -326,28 +343,16 @@ footer h2 {
   text-transform: uppercase;
 }
 
-footer ul {
-  margin-bottom: 74px;
+footer hr {
+  margin-top: 74px;
 }
 
-footer ul li {
-  list-style: none;
-}
-
-footer ul li,
-footer ul li a {
-  color: #e0e0e0;
-  text-decoration: none;
-}
-
-footer ul.bottom-menu {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-}
-
-footer ul.bottom-menu li {
+footer .bottom-menu li {
   margin-right: 15px;
+}
+
+footer .social a {
+  margin-right: 24px;
 }
 
 .btn {
