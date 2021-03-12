@@ -350,10 +350,6 @@ footer .bottom-menu li {
   margin-right: 15px;
 }
 
-footer .social a {
-  margin-right: 24px;
-}
-
 .btn {
   display: inline-block;
   padding: 16px 30px;
@@ -584,6 +580,10 @@ footer .social a {
 
 .mb-100 {
   margin-bottom: 100px;
+}
+
+.mr-24 {
+  margin-right: 24px;
 }
 
 .bg-free {
