@@ -51,7 +51,7 @@ p {
 }
 
 ul {
-  margin: 0;
+  margin: 0 0 30px 0;
   padding: 0;
 
   li {
@@ -97,32 +97,28 @@ h4,
   font-weight: 700;
 }
 
-h2,
-.h2 {
-  margin-bottom: 48px;
-}
-
 h3,
 .h3 {
   font-weight: 400;
-
-  text-align: center;
 }
 
 h1,
 h2,
-h3,
 .h1,
-.h2,
-.h3 {
+.h2 {
   text-transform: uppercase;
+}
+
+h2,
+.h2 {
+  margin-bottom: 49px;
 }
 
 h1 {
   font-size: $font-size-60;
   line-height: $line-height-90;
 
-  @media (max-width: 575px) {
+  @media (max-width: 576px) {
     font-size: $font-size-30;
     line-height: $line-height-45;
   }
@@ -132,19 +128,19 @@ h2 {
   font-size: $font-size-38;
   line-height: $line-height-57;
 
-  @media (max-width: 575px) {
+  @media (max-width: 576px) {
     font-size: $font-size-18;
     line-height: $line-height-27;
   }
 }
 
 h3 {
-  font-size: $font-size-24;
+  font-size: $font-size-30;
   line-height: $line-height-45;
 
-  @media (max-width: 575px) {
+  @media (max-width: 576px) {
     font-size: $font-size-16;
-    line-height: $line-height-24;
+    line-height: $line-height-26;
   }
 }
 
@@ -194,7 +190,7 @@ section {
   flex: 0 0 50%;
   max-width: 50%;
 
-  @media (max-width: 575px) {
+  @media (max-width: 576px) {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -204,7 +200,7 @@ section {
   flex: 0 0 33.3333333333%;
   max-width: 33.3333333333%;
 
-  @media (max-width: 575px) {
+  @media (max-width: 576px) {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -214,7 +210,7 @@ section {
   flex: 0 0 25%;
   max-width: 25%;
 
-  @media (max-width: 575px) {
+  @media (max-width: 576px) {
     flex: 0 0 100%;
     max-width: 100%;
   }
