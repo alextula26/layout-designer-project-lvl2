@@ -279,7 +279,6 @@ section {
 header {
   position: relative;
 
-  background: url("../images/banner.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -597,4 +596,12 @@ footer .social a {
 
 .bg-premium {
   background: url("../images/subscribe_3.png");
+}
+
+.bg-main {
+  background-image: url("../images/banner.png");
+}
+
+.bg-artist {
+  background-image: url("../images/Morten Harket.png");
 }
