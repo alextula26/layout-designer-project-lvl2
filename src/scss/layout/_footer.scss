@@ -1,0 +1,43 @@
+footer {
+  padding-bottom: 3rem;
+
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+
+  .footer-item {
+    padding: 3rem 2rem 0;
+  }
+
+  h2 {
+    margin-bottom: 16px;
+
+    font-weight: 700;
+    font-size: $font-size-18;
+    line-height: $line-height-24;
+    text-transform: uppercase;
+  }
+
+  ul {
+    margin-bottom: 74px;
+
+    li {
+      list-style: none;
+
+      &,
+      a {
+        color: $grey;
+        text-decoration: none;
+      }
+    }
+  }
+
+  ul.bottom-menu {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0;
+
+    li {
+      margin-right: 15px;
+    }
+  }
+}

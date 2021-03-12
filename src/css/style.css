@@ -45,6 +45,16 @@ p {
   padding-bottom: 16px;
 }
 
+hr,
+.hr {
+  height: 1px;
+
+  font-size: 1px;
+  line-height: 1px;
+
+  background-color: #e0e0e0;
+}
+
 h1,
 h2,
 h3,
@@ -297,6 +307,49 @@ header .form button {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+footer {
+  padding-bottom: 3rem;
+
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+footer .footer-item {
+  padding: 3rem 2rem 0;
+}
+
+footer h2 {
+  margin-bottom: 16px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+footer ul {
+  margin-bottom: 74px;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li,
+footer ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+footer ul.bottom-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+footer ul.bottom-menu li {
+  margin-right: 15px;
+}
+
 .btn {
   display: inline-block;
   padding: 16px 30px;
@@ -519,6 +572,10 @@ header .form button {
 
 .mb-48 {
   margin-bottom: 48px;
+}
+
+.mb-74 {
+  margin-bottom: 74px;
 }
 
 .mb-100 {

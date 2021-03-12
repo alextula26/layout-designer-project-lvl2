@@ -45,6 +45,16 @@ p {
   padding-bottom: 16px;
 }
 
+hr,
+.hr {
+  height: 1px;
+
+  font-size: 1px;
+  line-height: 1px;
+
+  background-color: $grey;
+}
+
 h1,
 h2,
 h3,
