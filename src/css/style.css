@@ -291,6 +291,27 @@ header .menu {
   grid-template-columns: max-content 1fr 250px;
 }
 
+header .logo {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px 0 1px 0;
+}
+
+header .logo .image {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+header .logo .title {
+  padding: 5px 64px 7px 0;
+
+  color: #fff;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+}
+
 header .nav {
   display: flex;
   flex-wrap: wrap;
@@ -321,6 +342,47 @@ header .nav li a:hover,
 header .nav li a.current {
   color: #fff;
   font-weight: 700;
+}
+
+header .find {
+  padding: 25px 0 0 0;
+}
+
+header .find input {
+  width: 100%;
+  padding: 5px 0 4px 10px;
+
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  background-color: #3c3b3d;
+  border: none;
+  border-radius: 50px;
+}
+
+header .find input::-webkit-input-placeholder {
+  color: #757575;
+}
+
+header .find input::-ms-input-placeholder {
+  color: #757575;
+}
+
+header .find input::-moz-placeholder {
+  color: #757575;
+}
+
+header .find input:-moz-placeholder {
+  color: #757575;
+}
+
+header .find input:-ms-input-placeholder {
+  color: #757575;
+}
+
+header .find input::placeholder {
+  color: #757575;
 }
 
 header .page-description {
