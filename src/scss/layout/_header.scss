@@ -5,6 +5,44 @@ header {
   background-position: center;
   background-size: cover;
 
+  .menu {
+    display: grid;
+    grid-template-columns: max-content 1fr 250px;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 30px 0 7px 0;
+
+    list-style: none;
+
+    li {
+      margin: 0;
+      padding: 0;
+
+      list-style: none;
+
+      a {
+        display: block;
+        padding: 0 1.5rem;
+
+        color: $grey;
+
+        font-size: 11px;
+        line-height: 13px;
+        text-transform: uppercase;
+
+        &:hover,
+        &.current {
+          color: $white;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
   .page-description {
     padding: 200px 0;
 
