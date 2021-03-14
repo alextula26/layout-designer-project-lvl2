@@ -47,7 +47,7 @@ img {
 }
 
 p {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 ul {
@@ -353,15 +353,18 @@ footer .bottom-menu li {
 }
 
 .btn {
+  position: relative;
+
   display: inline-block;
   padding: 16px 30px;
 
   color: #cacaca;
   font-size: 13px;
   font-family: "Roboto", sans-serif;
-  line-height: 16px;
+  line-height: 20px;
   text-align: center;
   text-decoration: none;
+  vertical-align: middlie;
 
   background-color: transparent;
   border: 1px solid transparent;
@@ -370,21 +373,28 @@ footer .bottom-menu li {
   cursor: pointer;
 }
 
+.btn img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+}
+
 .btn-block {
   display: block;
   width: 100%;
 }
 
-.btn-lg {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.btn-lg-radius {
+.btn-radius {
   padding-right: 40px;
   padding-left: 40px;
 
   border-radius: 32px;
+}
+
+.btn-lg {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .btn-green {
@@ -406,6 +416,52 @@ footer .bottom-menu li {
 
   background-color: #95390c;
   border-color: #95390c;
+}
+
+.mix {
+  padding-right: 66px;
+  padding-left: 66px;
+
+  text-align: left;
+}
+
+.mix::before {
+  position: absolute;
+  top: 21px;
+  left: 30px;
+
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  background-image: url("../images/play-button.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  content: "";
+}
+
+.favorites {
+  padding-right: 66px;
+  padding-left: 66px;
+}
+
+.favorites::before {
+  position: absolute;
+  top: 21px;
+  left: 30px;
+
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  background-image: url("../images/heart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  content: "";
 }
 
 .form-control {
@@ -559,6 +615,22 @@ footer .bottom-menu li {
   flex-wrap: wrap;
 }
 
+.font-size-16 {
+  font-size: 16px;
+}
+
+.line-height-16 {
+  line-height: 16px;
+}
+
+.line-height-20 {
+  line-height: 20px;
+}
+
+.line-height-24 {
+  line-height: 24px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -609,6 +681,10 @@ footer .bottom-menu li {
 
 .mr-24 {
   margin-right: 24px;
+}
+
+.w200 {
+  min-width: 200px;
 }
 
 .bg-free {

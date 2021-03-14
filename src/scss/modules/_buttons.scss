@@ -1,13 +1,17 @@
 .btn {
+  position: relative;
+
   display: inline-block;
   padding: 16px 30px;
 
   color: $dark-grey;
   font-size: $font-size-13;
   font-family: "Roboto", sans-serif;
-  line-height: $line-height-16;
+  line-height: $line-height-20;
   text-align: center;
   text-decoration: none;
+
+  vertical-align: middlie;
 
   background-color: transparent;
   border: 1px solid transparent;
@@ -16,6 +20,14 @@
   border-radius: 5px;
 
   cursor: pointer;
+
+  img {
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+  }
 }
 
 .btn-block {
@@ -23,16 +35,16 @@
   width: 100%;
 }
 
-.btn-lg {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.btn-lg-radius {
+.btn-radius {
   padding-right: 40px;
   padding-left: 40px;
 
   border-radius: 32px;
+}
+
+.btn-lg {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .btn-green {
@@ -54,4 +66,54 @@
 
   background-color: $red;
   border-color: $red;
+}
+
+.mix {
+  padding-right: 66px;
+  padding-left: 66px;
+
+  text-align: left;
+
+  &::before {
+    position: absolute;
+    top: 21px;
+    left: 30px;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url("../images/play-button.svg");
+    background-repeat: no-repeat;
+
+    background-position: 0 0;
+    background-size: cover;
+
+    content: "";
+  }
+}
+
+.favorites {
+  padding-right: 66px;
+  padding-left: 66px;
+
+  &::before {
+    position: absolute;
+    top: 21px;
+    left: 30px;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url("../images/heart.svg");
+    background-repeat: no-repeat;
+
+    background-position: 0 0;
+    background-size: cover;
+
+    content: "";
+  }
 }
