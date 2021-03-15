@@ -199,46 +199,24 @@ section {
   padding: 0 25px;
 }
 
-.col-1 {
+.col-xs-1 {
   flex: 0 0 100%;
   max-width: 100%;
 }
 
-.col-2 {
+.col-xs-2 {
   flex: 0 0 50%;
   max-width: 50%;
 }
 
-.col-3 {
+.col-xs-3 {
   flex: 0 0 33.3333333333%;
   max-width: 33.3333333333%;
 }
 
-.col-4 {
+.col-xs-4 {
   flex: 0 0 25%;
   max-width: 25%;
-}
-
-@media (max-width: 0) {
-  .col-xs-1 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  .col-xs-2 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-  .col-xs-3 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
-  }
-
-  .col-xs-4 {
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
 }
 
 @media (max-width: 576px) {
@@ -270,30 +248,6 @@ section {
 
 .break-after-column {
   break-after: column;
-}
-
-::-webkit-input-placeholder {
-  color: #fff;
-}
-
-::-ms-input-placeholder {
-  color: #fff;
-}
-
-::-moz-placeholder {
-  color: #fff;
-}
-
-:-moz-placeholder {
-  color: #fff;
-}
-
-:-ms-input-placeholder {
-  color: #fff;
-}
-
-::placeholder {
-  color: #fff;
 }
 
 @font-face {
@@ -414,43 +368,6 @@ header .nav li a.current {
   }
 }
 
-header .find input {
-  width: 100%;
-  padding: 5px 0 4px 10px;
-
-  font-size: 13px;
-  line-height: 16px;
-  text-transform: uppercase;
-
-  background-color: #3c3b3d;
-  border: none;
-  border-radius: 50px;
-}
-
-header .find input::-webkit-input-placeholder {
-  color: #757575;
-}
-
-header .find input::-ms-input-placeholder {
-  color: #757575;
-}
-
-header .find input::-moz-placeholder {
-  color: #757575;
-}
-
-header .find input:-moz-placeholder {
-  color: #757575;
-}
-
-header .find input:-ms-input-placeholder {
-  color: #757575;
-}
-
-header .find input::placeholder {
-  color: #757575;
-}
-
 header .header-description {
   padding: 200px 0;
 }
@@ -468,12 +385,6 @@ header .header-description h2 {
 header .form {
   max-width: 570px;
   margin: 0 auto;
-}
-
-@media (max-width: 576px) {
-  header .form .find-control {
-    min-width: 100%;
-  }
 }
 
 header .form button {
@@ -642,6 +553,79 @@ footer .bottom-menu li {
   background: none;
   border: 2px solid #cacaca;
   border-radius: 3px;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #fff;
+}
+
+.form-control::-moz-placeholder {
+  color: #fff;
+}
+
+.form-control:-moz-placeholder {
+  color: #fff;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #fff;
+}
+
+.form-control::placeholder {
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .form-control {
+    min-width: 100%;
+  }
+}
+
+.find-control {
+  width: 100%;
+  padding: 5px 0 4px 10px;
+
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  background-color: #3c3b3d;
+  border: none;
+  border-radius: 50px;
+}
+
+.find-control::-webkit-input-placeholder {
+  color: #757575;
+}
+
+.find-control::-ms-input-placeholder {
+  color: #757575;
+}
+
+.find-control::-moz-placeholder {
+  color: #757575;
+}
+
+.find-control:-moz-placeholder {
+  color: #757575;
+}
+
+.find-control:-ms-input-placeholder {
+  color: #757575;
+}
+
+.find-control::placeholder {
+  color: #757575;
+}
+
+@media (max-width: 576px) {
+  .find-control {
+    min-width: 100%;
+  }
 }
 
 .similar-artists .similar-item img {

@@ -27,4 +27,30 @@
 
   border: 2px solid $dark-grey;
   border-radius: $border-radius-input-default;
+
+  @include placeholder($white);
+
+  @media (max-width: 576px) {
+    min-width: 100%;
+  }
+}
+
+.find-control {
+  width: 100%;
+  padding: 5px 0 4px 10px;
+
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  background-color: #3c3b3d;
+
+  border: none;
+  border-radius: 50px;
+
+  @include placeholder($lite-grey);
+
+  @media (max-width: 576px) {
+    min-width: 100%;
+  }
 }

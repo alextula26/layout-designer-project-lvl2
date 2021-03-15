@@ -1,3 +1,15 @@
+@mixin media-breakpoint($value, $size) {
+  @if ($size == 0) {
+    @content;
+  }
+
+  @else {
+    @media ($value: $size) {
+      @content;
+    }
+  }
+}
+
 @mixin header($fs, $lh, $mfs: $fs, $mlh: $lh) {
   font-size: $fs;
   line-height: $lh;
@@ -8,15 +20,23 @@
   }
 }
 
-$max-width: 100%;
+@mixin make-grid-row($gutters: $grid-gutter-width-base) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0 -#{$gutters};
+  }
+}
 
 @mixin make-grid-columns($columns: $grid-columns, $gutters: $grid-gutter-width-base, $breakpoints: $grid-breakpoints) {
-
   %grid-column {
     position: relative;
 
     padding: 0 #{$gutters};
   }
+
+  $max-width: 100%;
 
   @each $breakpoint, $size in $breakpoints {
     @for $i from 1 through $columns {
@@ -26,21 +46,40 @@ $max-width: 100%;
     }
   }
 
-  @for $i from 1 through $columns {
-    .col-#{$i} {
-      flex: 0 0 #{getwidth($max-width, $i)};
-      max-width: #{getwidth($max-width, $i)};
-    }
-  }
-
   @each $breakpoint, $size in $breakpoints {
-    @media (max-width: $size) {
+    @include media-breakpoint(max-width, $size) {
       @for $i from 1 through $columns {
         .col-#{$breakpoint}-#{$i} {
-          flex: 0 0 #{getwidth($max-width, $i)};
-          max-width: #{getwidth($max-width, $i)};
+          flex: 0 0 #{get-width($max-width, $i)};
+          max-width: #{get-width($max-width, $i)};
         }
       }
     }
+  }
+}
+
+@mixin placeholder($color: $white) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  &::-ms-input-placeholder {
+    color: $color;
+  }
+
+  &::-moz-placeholder {
+    color: $color;
+  }
+
+  &:-moz-placeholder {
+    color: $color;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+
+  &::placeholder {
+    color: $color;
   }
 }
