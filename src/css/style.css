@@ -728,6 +728,24 @@ footer .bottom-menu li {
   }
 }
 
+.popular-tracks {
+  color: #e0e0e0;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.popular-tracks .popular-track {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  align-items: center;
+}
+
+.popular-tracks .photo-track {
+  width: 55px;
+  height: 55px;
+  margin-right: 15px;
+}
+
 .d-flex {
   display: flex;
 }
