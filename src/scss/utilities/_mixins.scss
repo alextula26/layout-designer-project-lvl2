@@ -1,0 +1,9 @@
+@mixin header ($fs, $lh, $mfs: $fs, $mlh: $lh) {
+  font-size: $fs;
+  line-height: $lh;
+
+  @media (max-width: 576px) {
+    font-size: $mfs;
+    line-height: $mlh;
+  }
+}
