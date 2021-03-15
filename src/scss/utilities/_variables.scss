@@ -7,6 +7,13 @@ $purple: #5328a1;
 $red: #95390c;
 $orange: #f89202;
 
+$grid-columns: 4;
+$grid-gutter-width-base: 25px;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px
+);
+
 $font-size-13: 13px;
 $font-size-14: 14px;
 $font-size-16: 16px;

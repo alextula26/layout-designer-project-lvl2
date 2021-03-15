@@ -1,0 +1,8 @@
+@function getwidth($number, $divisor) {
+  @return $number / $divisor;
+}
+
+@function square($number) {
+  $result: $number * $number;
+  @return $result;
+}

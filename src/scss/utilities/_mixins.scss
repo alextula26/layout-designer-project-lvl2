@@ -1,9 +1,46 @@
-@mixin header ($fs, $lh, $mfs: $fs, $mlh: $lh) {
+@mixin header($fs, $lh, $mfs: $fs, $mlh: $lh) {
   font-size: $fs;
   line-height: $lh;
 
   @media (max-width: 576px) {
     font-size: $mfs;
     line-height: $mlh;
+  }
+}
+
+$max-width: 100%;
+
+@mixin make-grid-columns($columns: $grid-columns, $gutters: $grid-gutter-width-base, $breakpoints: $grid-breakpoints) {
+
+  %grid-column {
+    position: relative;
+
+    padding: 0 #{$gutters};
+  }
+
+  @each $breakpoint, $size in $breakpoints {
+    @for $i from 1 through $columns {
+      .col-#{$breakpoint}-#{$i} {
+        @extend %grid-column;
+      }
+    }
+  }
+
+  @for $i from 1 through $columns {
+    .col-#{$i} {
+      flex: 0 0 #{getwidth($max-width, $i)};
+      max-width: #{getwidth($max-width, $i)};
+    }
+  }
+
+  @each $breakpoint, $size in $breakpoints {
+    @media (max-width: $size) {
+      @for $i from 1 through $columns {
+        .col-#{$breakpoint}-#{$i} {
+          flex: 0 0 #{getwidth($max-width, $i)};
+          max-width: #{getwidth($max-width, $i)};
+        }
+      }
+    }
   }
 }
