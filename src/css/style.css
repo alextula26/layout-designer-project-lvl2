@@ -196,23 +196,9 @@ section {
   max-width: 50%;
 }
 
-@media (max-width: 576px) {
-  .col-2 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
-
 .col-3 {
   flex: 0 0 33.3333333333%;
   max-width: 33.3333333333%;
-}
-
-@media (max-width: 576px) {
-  .col-3 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
 }
 
 .col-4 {
@@ -221,9 +207,16 @@ section {
 }
 
 @media (max-width: 576px) {
-  .col-4 {
+  .col-sm-1 {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-sm-2 {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
@@ -291,6 +284,12 @@ header .menu {
   grid-template-columns: max-content 1fr 250px;
 }
 
+@media (max-width: 576px) {
+  header .menu {
+    grid-template-columns: 1fr;
+  }
+}
+
 header .logo {
   display: flex;
   flex-wrap: wrap;
@@ -314,6 +313,7 @@ header .logo .title {
 
 header .nav {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   margin: 0;
   padding: 30px 0 7px 0;
@@ -321,9 +321,18 @@ header .nav {
   list-style: none;
 }
 
+@media (max-width: 576px) {
+  header .nav {
+    flex-direction: column;
+    padding-top: 17px;
+  }
+}
+
 header .nav li {
   margin: 0;
   padding: 0;
+
+  line-height: 100%;
 
   list-style: none;
 }
@@ -344,8 +353,21 @@ header .nav li a.current {
   font-weight: 700;
 }
 
+@media (max-width: 576px) {
+  header .nav li a {
+    display: inline-block;
+    padding: 0;
+  }
+}
+
 header .find {
   padding: 25px 0 0 0;
+}
+
+@media (max-width: 576px) {
+  header .find {
+    padding-top: 11px;
+  }
 }
 
 header .find input {
@@ -415,7 +437,7 @@ header .form .col {
 }
 
 @media (max-width: 576px) {
-  header .form input {
+  header .form .find-control {
     min-width: 100%;
   }
 }
@@ -756,6 +778,10 @@ footer .bottom-menu li {
 
 .mb-16 {
   margin-bottom: 16px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
 }
 
 .mb-25 {
