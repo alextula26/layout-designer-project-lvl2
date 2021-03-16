@@ -4,12 +4,12 @@ body {
 }
 
 body {
-  overflow-x: hidden;
+  display: block;
 
   color: $dark-grey;
-  font-size: $font-size-16;
+  font-size: $base-font-size;
   font-family: "Roboto", sans-serif;
-  line-height: 1.5;
+  line-height: $base-line-height;
 
   background-color: $dark;
 }
@@ -77,41 +77,36 @@ hr {
   background-color: $grey;
 }
 
-h1,
-h2,
-h3,
-h4,
-.h1,
-.h2,
-.h3,
-.h4 {
+%base-head {
   color: $white;
-}
 
-h1,
-h2,
-h4,
-.h1,
-.h2,
-.h4 {
-  font-weight: 700;
-}
-
-h3,
-.h3 {
-  font-weight: 400;
-}
-
-h1,
-h2,
-.h1,
-.h2 {
   text-transform: uppercase;
 }
 
-h2,
-.h2 {
-  margin-bottom: 49px;
+%font-weight-700 {
+  font-weight: 700;
+}
+
+%font-weight-400 {
+  font-weight: 400;
+}
+
+@for $i from 1 through $grid-columns {
+  h#{$i}, .h#{$i} {
+    @extend %base-head;
+  }
+
+  @if ($i != 3) {
+    h#{$i}, .h#{$i} {
+      @extend %font-weight-700;
+    }
+  }
+
+  @else {
+    h#{$i}, .h#{$i} {
+      @extend %font-weight-400;
+    }
+  }
 }
 
 h1 {
@@ -133,14 +128,26 @@ h4 {
 .container {
   position: relative;
 
-  max-width: 1200px;
-
   margin: 0 auto;
 
-  @media (max-width: 576px) {
-    max-width: 100%;
-
+  @media (max-width: 767px) {
     padding: 0 20px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 740px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 1200px;
   }
 }
 
@@ -154,6 +161,11 @@ section {
 .column {
   column-count: 2;
   column-gap: 30px;
+
+  @include media-breakpoint(max-width, 767px) {
+    column-count: 1;
+    column-gap: 0;
+  }
 }
 
 .break-after-column {

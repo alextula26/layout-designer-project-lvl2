@@ -14,7 +14,7 @@
   font-size: $fs;
   line-height: $lh;
 
-  @media (max-width: 576px) {
+  @include media-breakpoint(max-width, 767px) {
     font-size: $mfs;
     line-height: $mlh;
   }

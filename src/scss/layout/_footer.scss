@@ -1,26 +1,32 @@
 footer {
-  padding-bottom: 3rem;
+  padding: 4rem 0 3rem 0;
 
   background: linear-gradient(89.75deg, $purple 32.83%, $red 81.56%);
 
-  .footer-item {
-    padding: 3rem 2rem 0;
+  .top-menu {
+    padding-bottom: 71px;
   }
 
-  h2 {
+  .bottom-menu {
+    padding-top: 40px;
+  }
+
+  .top-menu ul,
+  .bottom-menu ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .bottom-menu ul li {
+    margin-right: 15px;
+  }
+
+  .title {
     margin-bottom: 16px;
 
     font-weight: 700;
     font-size: $font-size-18;
     line-height: $line-height-24;
     text-transform: uppercase;
-  }
-
-  hr {
-    margin-top: 74px;
-  }
-
-  .bottom-menu li {
-    margin-right: 15px;
   }
 }

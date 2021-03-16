@@ -1,4 +1,12 @@
 .form {
+  max-width: 570px;
+
+  margin: 0 auto;
+
+  button {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
   .row {
     margin: 0 -12px;
   }
@@ -35,20 +43,20 @@
   }
 }
 
-.find-control {
+.search-control {
   width: 100%;
   padding: 5px 0 4px 10px;
 
-  font-size: 13px;
-  line-height: 16px;
+  font-size: $font-size-13;
+  line-height: $line-height-16;
   text-transform: uppercase;
 
-  background-color: #3c3b3d;
+  background-color: $search-bg;
 
   border: none;
   border-radius: 50px;
 
-  @include placeholder($lite-grey);
+  @include placeholder($search-color);
 
   @media (max-width: 576px) {
     min-width: 100%;

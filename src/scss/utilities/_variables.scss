@@ -1,20 +1,22 @@
 $white: #fff;
 $dark: #08020d;
 $dark-grey: #cacaca;
-$lite-grey: #757575;
 $green: #34c176;
 $grey: #e0e0e0;
 $purple: #5328a1;
 $red: #95390c;
 $orange: #f89202;
+$search-color: #757575;
+$search-bg: #3c3b3d;
 
 $grid-columns: 4;
 $grid-gutter-width-base: 25px;
 $grid-breakpoints: (
   xs: 0,
-  sm: 576px
+  sm: 767px
 );
 
+$font-size-11: 11px;
 $font-size-13: 13px;
 $font-size-14: 14px;
 $font-size-16: 16px;
@@ -26,6 +28,7 @@ $font-size-38: 38px;
 $font-size-60: 60px;
 $font-size-64: 64px;
 
+$line-height-13: 13px;
 $line-height-16: 16px;
 $line-height-20: 20px;
 $line-height-24: 24px;
@@ -37,6 +40,9 @@ $line-height-50: 50px;
 $line-height-57: 57px;
 $line-height-90: 90px;
 $line-height-96: 96px;
+
+$base-font-size: $line-height-16;
+$base-line-height: $line-height-24;
 
 $h1-font-size: $font-size-60;
 $h1-line-height: $line-height-90;

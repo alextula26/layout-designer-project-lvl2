@@ -11,7 +11,7 @@
   text-align: center;
   text-decoration: none;
 
-  vertical-align: middlie;
+  vertical-align: middle;
 
   background-color: transparent;
   border: 1px solid transparent;
@@ -68,7 +68,8 @@
   border-color: $red;
 }
 
-.mix {
+.mix,
+.favorites {
   padding-right: 66px;
   padding-left: 66px;
 
@@ -84,7 +85,6 @@
     width: 20px;
     height: 20px;
 
-    background-image: url("../images/play-button.svg");
     background-repeat: no-repeat;
 
     background-position: 0 0;
@@ -94,26 +94,14 @@
   }
 }
 
-.favorites {
-  padding-right: 66px;
-  padding-left: 66px;
-
+.mix {
   &::before {
-    position: absolute;
-    top: 21px;
-    left: 30px;
+    background-image: url("../images/play-button.svg");
+  }
+}
 
-    display: block;
-
-    width: 20px;
-    height: 20px;
-
+.favorites {
+  &::before {
     background-image: url("../images/heart.svg");
-    background-repeat: no-repeat;
-
-    background-position: 0 0;
-    background-size: cover;
-
-    content: "";
   }
 }
