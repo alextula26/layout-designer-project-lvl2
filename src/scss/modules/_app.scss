@@ -1,0 +1,25 @@
+.app {
+  margin-bottom: 100px;
+
+  .app-content {
+    .app-descriptions {
+      order: 1;
+
+      font-size: $font-size-16;
+      line-height: $line-height-24;
+
+      @include media-breakpoint(max-width, 767px) {
+        order: 2 !important;
+      }
+    }
+
+    .app-image {
+      order: 2;
+
+      @include media-breakpoint(max-width, 767px) {
+        order: 1 !important;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

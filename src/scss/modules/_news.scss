@@ -1,8 +1,7 @@
-
 .news-item {
   margin-bottom: 16px;
 
-  @media (max-width: 576px) {
+  @include media-breakpoint(max-width, 767px) {
     margin-bottom: 65px;
   }
 
@@ -53,7 +52,7 @@
     order: 1;
   }
 
-  @media (max-width: 576px) {
+  @include media-breakpoint(max-width, 767px) {
     order: 1 !important;
   }
 }
@@ -67,7 +66,7 @@
     order: 1;
   }
 
-  @media (max-width: 576px) {
+  @include media-breakpoint(max-width, 767px) {
     order: 2 !important;
   }
 }
