@@ -1,35 +1,48 @@
 footer {
-  padding: 4rem 0 3rem 0;
+  padding: 62px 0 47px 0;
 
   background: linear-gradient(89.75deg, $purple 32.83%, $red 81.56%);
 
   .top-menu {
     padding-bottom: 72px;
 
-    ul {
-      margin: 0;
-      padding: 0;
-    }
-
     .title {
       margin-bottom: 16px;
 
       font-weight: 700;
       font-size: $font-size-18;
-      line-height: $line-height-24;
+      line-height: $line-height-27;
       text-transform: uppercase;
+    }
+
+    .social {
+      display: flex;
+      flex-wrap: wrap;
+
+      a {
+        margin-right: 24px;
+      }
     }
   }
 
   .bottom-menu {
     padding-top: 40px;
 
+    ul li {
+      margin-right: 15px;
+    }
+  }
+
+  .top-menu,
+  .bottom-menu {
     ul {
       margin: 0;
       padding: 0;
 
-      li {
-        margin-right: 15px;
+      li,
+      li * {
+        font-size: $font-size-16;
+        line-height: $line-height-24;
       }
     }
   }
