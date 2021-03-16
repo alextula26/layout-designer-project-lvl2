@@ -1,6 +1,8 @@
 header {
   position: relative;
 
+  line-height: 1;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -34,7 +36,7 @@ header {
     }
 
     .title {
-      padding: 6px 88px 6px 0;
+      padding: 5px 88px 6px 0;
 
       color: $white;
       font-weight: 700;
@@ -50,7 +52,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0;
-    padding: 6px 0;
+    padding: 5px 0 7px 0;
 
     list-style: none;
 

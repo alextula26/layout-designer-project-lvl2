@@ -1,9 +1,6 @@
 html,
 body {
   min-height: 100vh;
-
-  font-size: $base-font-size;
-  line-height: $base-line-height;
 }
 
 body {
@@ -11,7 +8,10 @@ body {
 
   color: $dark-grey;
 
+  font-size: $base-font-size;
+
   font-family: "Roboto", sans-serif;
+  line-height: $base-line-height;
 
   background-color: $dark;
 }
@@ -159,22 +159,3 @@ section {
 
 @include make-grid-row();
 @include make-grid-columns();
-
-.column {
-  column-count: 2;
-  column-gap: 30px;
-
-  @include media-breakpoint(max-width, 767px) {
-    column-count: 1;
-    column-gap: 0;
-  }
-}
-
-.break-after-column {
-  break-after: column;
-
-  @include media-breakpoint(max-width, 767px) {
-    column-count: 1;
-    column-gap: 0;
-  }  
-}

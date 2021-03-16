@@ -1,16 +1,15 @@
 html,
 body {
   min-height: 100vh;
-
-  font-size: 18px;
-  line-height: 1.5;
 }
 
 body {
   display: block;
 
   color: #cacaca;
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
+  line-height: 1.5;
 
   background-color: #08020d;
 }
@@ -253,29 +252,6 @@ section {
   }
 }
 
-.column {
-  column-count: 2;
-  column-gap: 30px;
-}
-
-@media (max-width: 767px) {
-  .column {
-    column-count: 1;
-    column-gap: 0;
-  }
-}
-
-.break-after-column {
-  break-after: column;
-}
-
-@media (max-width: 767px) {
-  .break-after-column {
-    column-count: 1;
-    column-gap: 0;
-  }
-}
-
 @font-face {
   font-weight: 400;
   font-family: "Roboto";
@@ -296,6 +272,8 @@ section {
 
 header {
   position: relative;
+
+  line-height: 1;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -334,7 +312,7 @@ header .logo .image {
 }
 
 header .logo .title {
-  padding: 6px 88px 6px 0;
+  padding: 5px 88px 6px 0;
 
   color: #fff;
   font-weight: 700;
@@ -348,7 +326,7 @@ header .nav {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0;
-  padding: 6px 0;
+  padding: 5px 0 7px 0;
 
   list-style: none;
 }
@@ -601,8 +579,8 @@ footer .bottom-menu ul li {
   margin: 0 -12px;
 }
 
-.form .col-1,
-.form .col-2 {
+.form .col-sm-1,
+.form .col-xs-2 {
   padding: 0 12px;
 }
 
