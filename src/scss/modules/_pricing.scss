@@ -21,6 +21,11 @@
         line-height: $line-height-45;
 
         text-align: center;
+
+        @include media-breakpoint(max-width, 767px) {
+          font-size: $font-size-16;
+          line-height: $line-height-24;
+        }
       }
 
       .pricing-value {
