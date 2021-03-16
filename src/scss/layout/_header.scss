@@ -7,6 +7,11 @@ header {
   background-position: center;
   background-size: cover;
 
+  section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
   .navbar {
     position: absolute;
     top: 25px;
@@ -98,15 +103,11 @@ header {
     }
   }
 
-  .header-description {
-    padding: 200px 0;
+  h2 {
+    margin-bottom: 32px;
 
-    h2 {
-      margin-bottom: 32px;
-
-      @include media-breakpoint(max-width, 767px) {
-        margin-bottom: 16px;
-      }
+    @include media-breakpoint(max-width, 767px) {
+      margin-bottom: 16px;
     }
   }
 }

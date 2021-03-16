@@ -280,6 +280,11 @@ header {
   background-size: cover;
 }
 
+header section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 header .navbar {
   position: absolute;
   top: 25px;
@@ -375,16 +380,12 @@ header .nav li a.current {
   }
 }
 
-header .header-description {
-  padding: 200px 0;
-}
-
-header .header-description h2 {
+header h2 {
   margin-bottom: 32px;
 }
 
 @media (max-width: 767px) {
-  header .header-description h2 {
+  header h2 {
     margin-bottom: 16px;
   }
 }
