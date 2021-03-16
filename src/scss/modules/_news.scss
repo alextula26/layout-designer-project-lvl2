@@ -12,6 +12,13 @@
 
 .news-body {
   margin-bottom: 24px;
+
+  h3 {
+    @include media-breakpoint(max-width, 767px) {
+      font-size: $font-size-16;
+      line-height: $line-height-26;
+    }
+  }
 }
 
 .news-footer {

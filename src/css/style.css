@@ -758,6 +758,13 @@ footer .bottom-menu ul li {
   margin-bottom: 24px;
 }
 
+@media (max-width: 767px) {
+  .news-body h3 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
 .news-footer .news-author {
   margin-bottom: 48px;
 
