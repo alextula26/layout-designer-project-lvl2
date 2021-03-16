@@ -413,11 +413,24 @@ footer .top-menu {
   padding-bottom: 71px;
 }
 
+footer .top-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer .top-menu .title {
+  margin-bottom: 16px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
 footer .bottom-menu {
   padding-top: 40px;
 }
 
-footer .top-menu ul,
 footer .bottom-menu ul {
   margin: 0;
   padding: 0;
@@ -425,15 +438,6 @@ footer .bottom-menu ul {
 
 footer .bottom-menu ul li {
   margin-right: 15px;
-}
-
-footer .title {
-  margin-bottom: 16px;
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  text-transform: uppercase;
 }
 
 .btn {

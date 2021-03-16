@@ -5,28 +5,32 @@ footer {
 
   .top-menu {
     padding-bottom: 71px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    .title {
+      margin-bottom: 16px;
+
+      font-weight: 700;
+      font-size: $font-size-18;
+      line-height: $line-height-24;
+      text-transform: uppercase;
+    }
   }
 
   .bottom-menu {
     padding-top: 40px;
-  }
 
-  .top-menu ul,
-  .bottom-menu ul {
-    margin: 0;
-    padding: 0;
-  }
+    ul {
+      margin: 0;
+      padding: 0;
 
-  .bottom-menu ul li {
-    margin-right: 15px;
-  }
-
-  .title {
-    margin-bottom: 16px;
-
-    font-weight: 700;
-    font-size: $font-size-18;
-    line-height: $line-height-24;
-    text-transform: uppercase;
+      li {
+        margin-right: 15px;
+      }
+    }
   }
 }
