@@ -41,6 +41,10 @@
 }
 
 .news-image {
+  img {
+    width: 100%;
+  }
+
   .news-item:nth-child(even) & {
     order: 2;
   }

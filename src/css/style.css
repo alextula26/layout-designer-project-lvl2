@@ -744,6 +744,10 @@ footer .bottom-menu ul li {
   text-transform: uppercase;
 }
 
+.news-image img {
+  width: 100%;
+}
+
 .news-item:nth-child(even) .news-image {
   order: 2;
 }
