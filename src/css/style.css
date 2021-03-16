@@ -410,8 +410,28 @@ footer {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
 
+footer .top-menu ul,
+footer .bottom-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer .top-menu ul li,
+footer .top-menu ul li *,
+footer .bottom-menu ul li,
+footer .bottom-menu ul li * {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 footer .top-menu {
   padding-bottom: 72px;
+}
+
+@media (max-width: 767px) {
+  footer .top-menu ul {
+    margin-bottom: 30px;
+  }
 }
 
 footer .top-menu .title {
@@ -436,22 +456,30 @@ footer .bottom-menu {
   padding-top: 40px;
 }
 
-footer .bottom-menu ul li {
-  margin-right: 15px;
-}
-
-footer .top-menu ul,
 footer .bottom-menu ul {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-footer .top-menu ul li,
-footer .top-menu ul li *,
-footer .bottom-menu ul li,
-footer .bottom-menu ul li * {
-  font-size: 16px;
-  line-height: 24px;
+@media (max-width: 767px) {
+  footer .bottom-menu ul {
+    flex-direction: column;
+  }
+}
+
+footer .bottom-menu ul li {
+  margin: 0 15px 0 0;
+}
+
+@media (max-width: 767px) {
+  footer .bottom-menu ul li {
+    margin: 0 0 16px 0;
+  }
+
+  footer .bottom-menu ul li:last-child {
+    margin: 0;
+  }
 }
 
 .btn {
