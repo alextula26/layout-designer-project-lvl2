@@ -105,6 +105,7 @@ h3 {
   @include header($h3-font-size, $h3-line-height);
 }
 
+/*
 .container {
   position: relative;
 
@@ -130,9 +131,33 @@ h3 {
     max-width: 1200px;
   }
 }
-
+*/
 section {
+
+  position: relative;
+
+  margin: 0 auto;
   padding-top: 100px;
+
+  @media (max-width: 767px) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 740px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 1200px;
+  }
 }
 
 @include make-grid-row();
