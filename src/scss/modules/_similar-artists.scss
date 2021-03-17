@@ -16,7 +16,11 @@
       }
 
       span {
-        display: inline-block;
+        display: block;
+
+        @include media-breakpoint(max-width, 767px) {
+          display: inline-block;
+        }
       }
     }
   }

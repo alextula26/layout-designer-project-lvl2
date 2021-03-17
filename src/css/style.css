@@ -701,7 +701,13 @@ footer .bottom-menu ul li {
 }
 
 #page-similar .similar-artists .similar-item span {
-  display: inline-block;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  #page-similar .similar-artists .similar-item span {
+    display: inline-block;
+  }
 }
 
 .pricing .pricing-item {
