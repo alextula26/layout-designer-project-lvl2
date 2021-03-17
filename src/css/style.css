@@ -696,6 +696,10 @@ footer .bottom-menu ul li {
   margin-top: 25px;
 }
 
+#page-similar .similar-artists .similar-item img {
+  margin-bottom: 18px;
+}
+
 .pricing .pricing-item {
   margin-bottom: 39px;
 }
