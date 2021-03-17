@@ -169,8 +169,8 @@ section {
 
 .row {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 -25px;
 }
 
 .col-sm-4,
@@ -183,7 +183,7 @@ section {
 .col-xs-1 {
   position: relative;
 
-  padding: 0 25px;
+  padding-right: 50px;
 }
 
 .col-xs-1 {
@@ -191,9 +191,17 @@ section {
   max-width: 100%;
 }
 
+.col-xs-1:nth-child(1) {
+  padding-right: 0;
+}
+
 .col-xs-2 {
   flex: 0 0 50%;
   max-width: 50%;
+}
+
+.col-xs-2:nth-child(2) {
+  padding-right: 0;
 }
 
 .col-xs-3 {
@@ -201,9 +209,17 @@ section {
   max-width: 33.3333333333%;
 }
 
+.col-xs-3:nth-child(3) {
+  padding-right: 0;
+}
+
 .col-xs-4 {
   flex: 0 0 25%;
   max-width: 25%;
+}
+
+.col-xs-4:nth-child(4) {
+  padding-right: 0;
 }
 
 @media (max-width: 767px) {
@@ -212,9 +228,17 @@ section {
     max-width: 100%;
   }
 
+  .col-sm-1:nth-child(1) {
+    padding-right: 0;
+  }
+
   .col-sm-2 {
     flex: 0 0 50%;
     max-width: 50%;
+  }
+
+  .col-sm-2:nth-child(2) {
+    padding-right: 0;
   }
 
   .col-sm-3 {
@@ -222,9 +246,17 @@ section {
     max-width: 33.3333333333%;
   }
 
+  .col-sm-3:nth-child(3) {
+    padding-right: 0;
+  }
+
   .col-sm-4 {
     flex: 0 0 25%;
     max-width: 25%;
+  }
+
+  .col-sm-4:nth-child(4) {
+    padding-right: 0;
   }
 }
 
