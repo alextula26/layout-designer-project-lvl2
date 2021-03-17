@@ -642,7 +642,7 @@ footer .bottom-menu ul li {
   width: 100%;
   padding: 5px 0 4px 10px;
 
-  font-size: 13px;
+  font-size: 12.8px;
   line-height: 16px;
   text-transform: uppercase;
 
@@ -741,8 +741,8 @@ footer .bottom-menu ul li {
   margin-top: 64px;
   margin-bottom: 42px;
 
-  font-size: 13px;
-  line-height: 20px;
+  font-size: 12.8px;
+  line-height: 19.2px;
   text-align: center;
 }
 
@@ -777,8 +777,8 @@ footer .bottom-menu ul li {
 .news-footer .news-author {
   margin-bottom: 48px;
 
-  font-size: 13px;
-  line-height: 20px;
+  font-size: 12.8px;
+  line-height: 19.2px;
 }
 
 .news-footer .news-author .avatar {
@@ -860,9 +860,17 @@ footer .bottom-menu ul li {
 }
 
 .popular-tracks {
+  padding-right: 50px;
+
   color: #e0e0e0;
-  font-size: 13px;
-  line-height: 20px;
+  font-size: 12.8px;
+  line-height: 19.2px;
+}
+
+@media (max-width: 767px) {
+  .popular-tracks {
+    padding-right: 0;
+  }
 }
 
 .popular-tracks .popular-track {
@@ -875,6 +883,12 @@ footer .bottom-menu ul li {
   width: 55px;
   height: 55px;
   margin-right: 15px;
+}
+
+.popular-tracks .info-track h3 {
+  font-weight: 700;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .d-flex {
@@ -894,7 +908,7 @@ footer .bottom-menu ul li {
 }
 
 .line-height-20 {
-  line-height: 20px;
+  line-height: 19.2px;
 }
 
 .line-height-24 {
