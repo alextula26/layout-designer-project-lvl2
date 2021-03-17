@@ -895,6 +895,16 @@ footer .bottom-menu ul li {
   text-align: right;
 }
 
+.discography {
+  padding-right: 50px;
+}
+
+@media (max-width: 767px) {
+  .discography {
+    padding-right: 0;
+  }
+}
+
 .d-flex {
   display: flex;
 }
@@ -907,6 +917,10 @@ footer .bottom-menu ul li {
   font-size: 16px;
 }
 
+.font-size-18 {
+  font-size: 18px;
+}
+
 .line-height-16 {
   line-height: 16px;
 }
@@ -917,6 +931,10 @@ footer .bottom-menu ul li {
 
 .line-height-24 {
   line-height: 24px;
+}
+
+.line-height-27 {
+  line-height: 27px;
 }
 
 .text-left {
@@ -949,6 +967,10 @@ footer .bottom-menu ul li {
 
 .mb-16 {
   margin-bottom: 16px;
+}
+
+.mb-18 {
+  margin-bottom: 18px;
 }
 
 .mb-24 {

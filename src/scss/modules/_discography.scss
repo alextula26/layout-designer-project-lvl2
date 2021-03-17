@@ -1,0 +1,7 @@
+.discography {
+  padding-right: 50px;
+
+  @include media-breakpoint(max-width, 767px) {
+    padding-right: 0;
+  }
+}
