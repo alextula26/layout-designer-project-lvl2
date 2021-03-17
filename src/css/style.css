@@ -282,8 +282,15 @@ header {
 }
 
 header section {
-  padding-top: 200px;
   padding-bottom: 200px;
+}
+
+header section.main {
+  padding-top: 200px;
+}
+
+header section.artist {
+  padding-top: 250px;
 }
 
 header .navbar {
@@ -537,7 +544,6 @@ footer .bottom-menu ul li {
 
 .mix,
 .favorites {
-  padding-right: 66px;
   padding-left: 66px;
 
   text-align: left;
