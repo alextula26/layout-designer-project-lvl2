@@ -282,15 +282,16 @@ header {
 }
 
 header section {
+  padding-top: 200px;
   padding-bottom: 200px;
 }
 
-header section.main {
-  padding-top: 200px;
+header section.main h1 {
+  margin-top: 0;
 }
 
-header section.artist {
-  padding-top: 250px;
+header section.artist h1 {
+  margin-top: 48px;
 }
 
 header .navbar {
