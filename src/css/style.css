@@ -700,6 +700,10 @@ footer .bottom-menu ul li {
   margin-bottom: 18px;
 }
 
+#page-similar .similar-artists .similar-item span {
+  display: inline-block;
+}
+
 .pricing .pricing-item {
   margin-bottom: 39px;
 }
