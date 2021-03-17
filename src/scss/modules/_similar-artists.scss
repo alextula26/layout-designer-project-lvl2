@@ -1,3 +1,15 @@
-.similar-artists {
-  padding-right: 50px;
+#page-similar {
+  margin-bottom: 75px;
+
+  h2 {
+    margin-bottom: 23px;
+  }
+
+  .similar-artists {
+    padding-right: 50px;
+
+    .similar-item {
+      margin-top: 25px;
+    }
+  }
 }

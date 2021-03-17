@@ -680,8 +680,20 @@ footer .bottom-menu ul li {
   }
 }
 
-.similar-artists {
+#page-similar {
+  margin-bottom: 75px;
+}
+
+#page-similar h2 {
+  margin-bottom: 23px;
+}
+
+#page-similar .similar-artists {
   padding-right: 50px;
+}
+
+#page-similar .similar-artists .similar-item {
+  margin-top: 25px;
 }
 
 .pricing .pricing-item {
