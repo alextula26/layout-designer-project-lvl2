@@ -82,33 +82,14 @@ hr {
 
 %base-head {
   color: $white;
+  font-weight: 700;
 
   text-transform: uppercase;
-}
-
-%font-weight-700 {
-  font-weight: 700;
-}
-
-%font-weight-400 {
-  font-weight: 400;
 }
 
 @for $i from 1 through $grid-columns {
   h#{$i}, .h#{$i} {
     @extend %base-head;
-  }
-
-  @if ($i != 3) {
-    h#{$i}, .h#{$i} {
-      @extend %font-weight-700;
-    }
-  }
-
-  @else {
-    h#{$i}, .h#{$i} {
-      @extend %font-weight-400;
-    }
   }
 }
 
@@ -121,11 +102,7 @@ h2 {
 }
 
 h3 {
-  @include header($h3-font-size, $h3-line-height, $h3-mobile-font-size, $h3-mobile-line-height);
-}
-
-h4 {
-  @include header($h4-font-size, $h4-line-height);
+  @include header($h3-font-size, $h3-line-height);
 }
 
 .container {
