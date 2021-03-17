@@ -154,6 +154,7 @@ section {
 
 @media (min-width: 1240px) {
   section {
+    width: 1200px;
     max-width: 1200px;
   }
 }
