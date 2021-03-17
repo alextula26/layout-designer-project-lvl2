@@ -898,12 +898,6 @@ footer .bottom-menu ul li {
   padding-right: 50px;
 }
 
-@media (max-width: 767px) {
-  .discography {
-    padding-right: 0;
-  }
-}
-
 .d-flex {
   display: flex;
 }
