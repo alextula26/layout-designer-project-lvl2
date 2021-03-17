@@ -414,8 +414,6 @@ footer .top-menu ul li,
 footer .top-menu ul li *,
 footer .bottom-menu ul li,
 footer .bottom-menu ul li * {
-  display: block;
-
   font-size: 16px;
   line-height: 24px;
 }
@@ -439,43 +437,47 @@ footer .top-menu .title {
   text-transform: uppercase;
 }
 
-footer .top-menu .social {
+.social {
   display: flex;
   flex-wrap: wrap;
 }
 
-footer .top-menu .social a {
+.social a {
   margin-right: 24px;
 }
 
-footer .bottom-menu {
+.social .bottom-menu {
   padding-top: 40px;
 }
 
-footer .bottom-menu ul {
+.social .bottom-menu ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 @media (max-width: 767px) {
-  footer .bottom-menu ul {
+  .social .bottom-menu ul {
     flex-direction: column;
   }
 }
 
-footer .bottom-menu ul li {
+.social .bottom-menu ul li {
   margin: 0 15px 0 0;
 }
 
 @media (max-width: 767px) {
-  footer .bottom-menu ul li {
+  .social .bottom-menu ul li {
     margin: 0 0 16px 0;
   }
 
-  footer .bottom-menu ul li:last-child {
+  .social .bottom-menu ul li:last-child {
     margin: 0;
   }
+}
+
+.social .bottom-menu ul li a {
+  display: block;
 }
 
 .btn {
