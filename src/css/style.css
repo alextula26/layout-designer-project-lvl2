@@ -8,6 +8,7 @@ body {
 
 body {
   display: block;
+  margin: 0;
 
   color: #cacaca;
   font-family: "Roboto", sans-serif;
@@ -131,8 +132,11 @@ section {
   position: relative;
 
   width: 1200px;
-  margin: 0 auto;
-  padding-top: 100px;
+
+  /* margin: 0 auto; */
+  padding: 100px 170px 0 120px;
+
+  /* padding-top: 100px; */
 
   /* @media (max-width: 767px) {
     padding: 0 20px;
