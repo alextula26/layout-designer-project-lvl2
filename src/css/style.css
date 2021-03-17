@@ -875,7 +875,7 @@ footer .bottom-menu ul li {
 
 .popular-tracks .popular-track {
   display: grid;
-  grid-template-columns: max-content 1fr max-content;
+  grid-template-columns: max-content max-content 1fr;
   align-items: center;
 }
 
@@ -889,6 +889,10 @@ footer .bottom-menu ul li {
   font-weight: 700;
   font-size: inherit;
   line-height: inherit;
+}
+
+.popular-tracks .time {
+  text-align: right;
 }
 
 .d-flex {

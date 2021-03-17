@@ -11,7 +11,7 @@
 
   .popular-track {
     display: grid;
-    grid-template-columns: max-content 1fr max-content;
+    grid-template-columns: max-content max-content 1fr;
     align-items: center;
   }
 
@@ -27,5 +27,9 @@
       font-size: inherit;
       line-height: inherit;
     }
+  }
+
+  .time {
+    text-align: right;
   }
 }
