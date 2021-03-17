@@ -274,7 +274,7 @@ header section.artist h1 {
 
 @media (max-width: 767px) {
   header section.artist h1 {
-    margin-top: 28px;
+    margin-top: 24px;
   }
 }
 
@@ -368,7 +368,7 @@ header .nav li a.current {
 
 @media (max-width: 767px) {
   header .search {
-    padding-top: 14px;
+    padding-top: 10px;
   }
 }
 

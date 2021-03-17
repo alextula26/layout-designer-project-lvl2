@@ -19,7 +19,7 @@ header {
       margin-top: 48px;
 
       @include media-breakpoint(max-width, 767px) {
-        margin-top: 28px;
+        margin-top: 24px;
       }
     }
   }
@@ -110,7 +110,7 @@ header {
 
   .search {
     @include media-breakpoint(max-width, 767px) {
-      padding-top: 14px;
+      padding-top: 10px;
     }
   }
 
