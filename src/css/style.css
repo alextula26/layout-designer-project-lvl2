@@ -414,6 +414,8 @@ footer .top-menu ul li,
 footer .top-menu ul li *,
 footer .bottom-menu ul li,
 footer .bottom-menu ul li * {
+  display: block;
+
   font-size: 16px;
   line-height: 24px;
 }
