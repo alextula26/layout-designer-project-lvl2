@@ -354,16 +354,16 @@ header .nav li a {
   text-transform: uppercase;
 }
 
-@media (max-width: 767px) {
-  header .nav li a {
-    display: inline-block;
-  }
-}
-
 header .nav li a:hover,
 header .nav li a.current {
   color: #fff;
   font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  header .nav li a {
+    display: inline-block;
+  }
 }
 
 @media (max-width: 767px) {
@@ -437,46 +437,46 @@ footer .top-menu .title {
   text-transform: uppercase;
 }
 
-.social {
+footer .top-menu .social {
   display: flex;
   flex-wrap: wrap;
 }
 
-.social a {
+footer .top-menu .social a {
   margin-right: 24px;
 }
 
-.social .bottom-menu {
+footer .bottom-menu {
   padding-top: 40px;
 }
 
-.social .bottom-menu ul {
+footer .bottom-menu ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 @media (max-width: 767px) {
-  .social .bottom-menu ul {
+  footer .bottom-menu ul {
     flex-direction: column;
   }
 }
 
-.social .bottom-menu ul li {
+footer .bottom-menu ul li {
   margin: 0 15px 0 0;
 }
 
 @media (max-width: 767px) {
-  .social .bottom-menu ul li {
+  footer .bottom-menu ul li {
     margin: 0 0 16px 0;
   }
 
-  .social .bottom-menu ul li:last-child {
+  footer .bottom-menu ul li:last-child {
     margin: 0;
   }
 }
 
-.social .bottom-menu ul li a {
+footer .bottom-menu ul li a {
   display: block;
 }
 

@@ -95,14 +95,14 @@ header {
         line-height: $line-height-13;
         text-transform: uppercase;
 
-        @include media-breakpoint(max-width, 767px) {
-          display: inline-block;
-        }
-
         &:hover,
         &.current {
           color: $white;
           font-weight: 700;
+        }
+
+        @include media-breakpoint(max-width, 767px) {
+          display: inline-block;
         }
       }
 
