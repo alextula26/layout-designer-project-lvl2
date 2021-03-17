@@ -367,6 +367,13 @@ header .nav li a.current {
 }
 
 @media (max-width: 767px) {
+  header .nav li {
+    align-self: flex-start;
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
   header .search {
     padding-top: 10px;
   }
@@ -380,6 +387,15 @@ header h2 {
   header h2 {
     margin-bottom: 16px;
   }
+}
+
+header .count-fans {
+  display: inline-block;
+  margin-bottom: 49px;
+
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 footer {

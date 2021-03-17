@@ -105,6 +105,11 @@ header {
           font-weight: 700;
         }
       }
+
+      @include media-breakpoint(max-width, 767px) {
+        align-self: flex-start;
+        padding: 0;
+      }
     }
   }
 
@@ -120,5 +125,14 @@ header {
     @include media-breakpoint(max-width, 767px) {
       margin-bottom: 16px;
     }
+  }
+
+  .count-fans {
+    display: inline-block;
+    margin-bottom: 49px;
+
+    color: $white;
+    font-size: $font-size-16;
+    line-height: $line-height-24;
   }
 }
