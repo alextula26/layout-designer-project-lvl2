@@ -23,8 +23,9 @@
 @mixin make-grid-row($gutters: $grid-gutter-width-base) {
   .row {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+
+    margin: 0 -#{$gutters};
   }
 }
 
@@ -32,7 +33,7 @@
   %grid-column {
     position: relative;
 
-    padding-right: #{$gutters};
+    padding: 0 #{$gutters};
   }
 
   $max-width: 100%;
@@ -51,10 +52,6 @@
         .col-#{$breakpoint}-#{$i} {
           flex: 0 0 #{get-width($max-width, $i)};
           max-width: #{get-width($max-width, $i)};
-
-          &:nth-child(#{$i}) {
-            padding-right: 0;
-          }
         }
       }
     }
