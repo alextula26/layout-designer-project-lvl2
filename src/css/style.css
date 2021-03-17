@@ -829,6 +829,7 @@ footer .bottom-menu ul li {
 
 .app .app-content .app-descriptions {
   order: 1;
+  padding-top: 16px;
 
   font-size: 16px;
   line-height: 24px;
@@ -837,6 +838,7 @@ footer .bottom-menu ul li {
 @media (max-width: 767px) {
   .app .app-content .app-descriptions {
     order: 2 !important;
+    padding-top: 0;
   }
 }
 

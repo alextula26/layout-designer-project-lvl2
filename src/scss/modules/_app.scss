@@ -4,12 +4,14 @@
   .app-content {
     .app-descriptions {
       order: 1;
+      padding-top: 16px;
 
       font-size: $font-size-16;
       line-height: $line-height-24;
 
       @include media-breakpoint(max-width, 767px) {
         order: 2 !important;
+        padding-top: 0;
       }
     }
 
