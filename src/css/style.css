@@ -130,33 +130,26 @@ h3 {
 section {
   position: relative;
 
+  width: 1200px;
   margin: 0 auto;
   padding-top: 100px;
-}
 
-@media (max-width: 767px) {
-  section {
+  /* @media (max-width: 767px) {
     padding: 0 20px;
   }
-}
 
-@media (min-width: 768px) {
-  section {
+  @media (min-width: 768px) {
     max-width: 740px;
   }
-}
 
-@media (min-width: 992px) {
-  section {
+  @media (min-width: 992px) {
     max-width: 960px;
   }
-}
 
-@media (min-width: 1240px) {
-  section {
+  @media (min-width: 1240px) {
     width: 1200px;
     max-width: 1200px;
-  }
+  } */
 }
 
 .row {
