@@ -46,14 +46,14 @@
           margin-right: 16px;
 
           font-size: $font-size-64;
-          line-height: $line-height-96;
+          line-height: 1em;
         }
 
         .currency {
-          padding-top: 16px;
+          padding-top: 8px;
 
           font-size: $font-size-32;
-          line-height: $line-height-48;
+          line-height: 1em;
 
           text-transform: uppercase;
         }

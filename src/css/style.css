@@ -772,14 +772,14 @@ footer {
   margin-right: 16px;
 
   font-size: 64px;
-  line-height: 96px;
+  line-height: 1em;
 }
 
 .pricing .pricing-item .pricing-body .pricing-value .currency {
-  padding-top: 16px;
+  padding-top: 8px;
 
   font-size: 32px;
-  line-height: 48px;
+  line-height: 1em;
   text-transform: uppercase;
 }
 
