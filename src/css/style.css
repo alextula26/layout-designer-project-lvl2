@@ -141,8 +141,8 @@ main section {
 .container {
   position: relative;
 
-  flex-grow: 1;
-  flex-shrink: 0;
+  flex: 1 0 100%;
+  max-width: 100%;
 }
 
 @media (max-width: 767px) {
@@ -153,21 +153,21 @@ main section {
 
 @media (min-width: 768px) {
   .container {
-    flex-basis: 740px;
+    flex: 1 0 740px;
     max-width: 740px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    flex-basis: 960px;
+    flex: 1 0 960px;
     max-width: 960px;
   }
 }
 
 @media (min-width: 1240px) {
   .container {
-    flex-basis: 1200px;
+    flex: 1 0 1200px;
     max-width: 1200px;
   }
 }
