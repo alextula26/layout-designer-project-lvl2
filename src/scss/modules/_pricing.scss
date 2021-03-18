@@ -8,6 +8,10 @@
   .pricing-item {
     margin-bottom: 50px;
 
+    &:last-child {
+      margin-bottom: 43px;
+    }
+
     .pricing-body {
       padding: 19px 24px;
 
