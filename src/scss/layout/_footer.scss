@@ -1,77 +1,92 @@
+%font-footer-base {
+  font-size: $font-size-16;
+  line-height: $line-height-24;
+}
+
 footer {
   padding: 62px 0 47px 0;
 
   background: linear-gradient(89.75deg, $purple 32.83%, $red 81.56%);
+}
 
-  .top-menu,
-  .bottom-menu {
-    ul {
-      margin: 0;
-      padding: 0;
+.top-menu {
+  padding-bottom: 68px;
 
-      li,
-      li * {
-        font-size: $font-size-16;
-        line-height: $line-height-24;
-      }
-    }
+  &-title {
+    margin-bottom: 16px;
+
+    font-weight: 700;
+    font-size: $font-size-18;
+    line-height: $line-height-27;
+    text-transform: uppercase;
   }
 
-  .top-menu {
-    padding-bottom: 68px;
+  ul {
+    @include ul-reset();
 
     @include media-breakpoint(max-width, 767px) {
-      ul {
-        margin-bottom: 30px;
-      }
+      margin-bottom: 30px;
     }
 
-    .title {
-      margin-bottom: 16px;
-
-      font-weight: 700;
-      font-size: $font-size-18;
-      line-height: $line-height-27;
-      text-transform: uppercase;
-    }
-
-    .social {
-      display: flex;
-      flex-wrap: wrap;
+    li {
+      @extend %font-footer-base;
 
       a {
-        margin-right: 24px;
+        @extend %font-footer-base;
+
+        @include hover-current() {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.bottom-menu {
+  padding-top: 40px;
+
+  ul {
+    @include ul-reset();
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @include media-breakpoint(max-width, 767px) {
+      flex-direction: column;
+    }
+
+    li {
+      margin: 0 15px 0 0;
+
+      @extend %font-footer-base;
+
+      @include media-breakpoint(max-width, 767px) {
+        margin: 0 0 16px 0;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+
+      a {
+        display: block;
+
+        @extend %font-footer-base;
+
+        @include hover-current() {
+          color: $white;
+        }
       }
     }
   }
 
-  .bottom-menu {
-    padding-top: 40px;
+  .social {
+    display: flex;
+    flex-wrap: wrap;
 
-    ul {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-
-      @include media-breakpoint(max-width, 767px) {
-        flex-direction: column;
-      }
-
-      li {
-        margin: 0 15px 0 0;
-
-        @include media-breakpoint(max-width, 767px) {
-          margin: 0 0 16px 0;
-
-          &:last-child {
-            margin: 0;
-          }
-        }
-
-        a {
-          display: block;
-        }
-      }
+    a {
+      margin-right: 24px;
     }
   }
 }

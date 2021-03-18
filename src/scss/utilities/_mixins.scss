@@ -10,6 +10,18 @@
   }
 }
 
+@mixin hover-current() {
+  &:hover,
+  &.current {
+    @content;
+  }
+}
+
+@mixin ul-reset() {
+  margin: 0;
+  padding: 0;
+}
+
 @mixin header($fs, $lh, $mfs: $fs, $mlh: $lh) {
   font-size: $fs;
   line-height: $lh;

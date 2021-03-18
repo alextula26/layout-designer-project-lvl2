@@ -1,3 +1,9 @@
+%flex-base-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 html,
 body {
   min-height: 100vh;
@@ -101,13 +107,21 @@ h3 {
   @include header($h3-font-size, $h3-line-height);
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+header,
+main,
+footer {
+  @extend %flex-base-center;
 }
 
-section {
+main {
+  flex-grow: 1;
+
+  section {
+    padding-top: 100px;
+  }
+}
+
+.container {
   position: relative;
 
   flex: 0 0 100%;
@@ -130,14 +144,6 @@ section {
   @media (min-width: 1240px) {
     flex: 0 0 1200px;
     max-width: 1200px;
-  }
-}
-
-main {
-  flex-grow: 1;
-
-  section {
-    padding-top: 100px;
   }
 }
 
