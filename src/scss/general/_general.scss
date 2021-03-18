@@ -124,22 +124,25 @@ main {
 .container {
   position: relative;
 
+  flex-grow: 1;
+  flex-shrink: 0;
+
   @media (max-width: 767px) {
     padding: 0 20px;
   }
 
   @media (min-width: 768px) {
-    flex: 0 0 740px;
+    flex-basis: 740px;
     max-width: 740px;
   }
 
   @media (min-width: 992px) {
-    flex: 0 0 960px;
+    flex-basis: 960px;
     max-width: 960px;
   }
 
   @media (min-width: 1240px) {
-    flex: 0 0 1200px;
+    flex-basis: 1200px;
     max-width: 1200px;
   }
 }
