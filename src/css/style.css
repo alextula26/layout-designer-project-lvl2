@@ -765,18 +765,20 @@ footer {
 
 .pricing .pricing-item .pricing-body .pricing-value {
   display: flex;
-  justify-content: center;
   margin-bottom: 40px;
 }
 
 .pricing .pricing-item .pricing-body .pricing-value .price {
+  flex-basis: 50%;
   margin-right: 16px;
 
   font-size: 64px;
   line-height: 1em;
+  text-align: right;
 }
 
 .pricing .pricing-item .pricing-body .pricing-value .currency {
+  flex-basis: 50%;
   padding-top: 8px;
 
   font-size: 32px;

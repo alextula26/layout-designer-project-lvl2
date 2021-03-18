@@ -42,18 +42,21 @@
 
       .pricing-value {
         display: flex;
-        justify-content: center;
 
         margin-bottom: 40px;
 
         .price {
+          flex-basis: 50%;
           margin-right: 16px;
 
           font-size: $font-size-64;
           line-height: 1em;
+
+          text-align: right;
         }
 
         .currency {
+          flex-basis: 50%;
           padding-top: 8px;
 
           font-size: $font-size-32;
