@@ -7,14 +7,18 @@ footer {
   padding: 62px 0 48px 0;
 
   @include media-breakpoint(max-width, 767px) {
-    padding: 63px 0 48px 0;
-  }  
+    padding: 62px 0 48px 0;
+  }
 
   background: linear-gradient(89.75deg, $purple 32.83%, $red 81.56%);
 }
 
 .top-menu {
   padding-bottom: 68px;
+
+  @include media-breakpoint(max-width, 767px) {
+    padding-bottom: 72px;
+  }
 
   &-title {
     margin-bottom: 15px;

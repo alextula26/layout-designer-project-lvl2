@@ -417,12 +417,18 @@ footer {
 
 @media (max-width: 767px) {
   footer {
-    padding: 63px 0 48px 0;
+    padding: 62px 0 48px 0;
   }
 }
 
 .top-menu {
   padding-bottom: 68px;
+}
+
+@media (max-width: 767px) {
+  .top-menu {
+    padding-bottom: 72px;
+  }
 }
 
 .top-menu-title {
