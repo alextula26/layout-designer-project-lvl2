@@ -21,57 +21,17 @@ footer {
     text-transform: uppercase;
   }
 
-  ul {
+  .top-menu-nav {
     @include ul-reset();
 
     @include media-breakpoint(max-width, 767px) {
       margin-bottom: 30px;
     }
 
-    li {
+    > .top-menu-nav-item {
       @extend %font-footer-base;
 
-      a {
-        @extend %font-footer-base;
-
-        @include hover-current() {
-          color: $white;
-        }
-      }
-    }
-  }
-}
-
-.bottom-menu {
-  padding-top: 40px;
-
-  ul {
-    @include ul-reset();
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    @include media-breakpoint(max-width, 767px) {
-      flex-direction: column;
-    }
-
-    li {
-      margin: 0 15px 0 0;
-
-      @extend %font-footer-base;
-
-      @include media-breakpoint(max-width, 767px) {
-        margin: 0 0 16px 0;
-
-        &:last-child {
-          margin: 0;
-        }
-      }
-
-      a {
-        display: block;
-
+      > .top-menu-nav-link {
         @extend %font-footer-base;
 
         @include hover-current() {
@@ -85,8 +45,48 @@ footer {
     display: flex;
     flex-wrap: wrap;
 
-    a {
+    .social-link {
       margin-right: 24px;
+    }
+  }
+}
+
+.bottom-menu {
+  padding-top: 40px;
+
+  .bottom-menu-nav {
+    @include ul-reset();
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @include media-breakpoint(max-width, 767px) {
+      flex-direction: column;
+    }
+
+    .bottom-menu-nav-item {
+      margin: 0 15px 0 0;
+
+      @extend %font-footer-base;
+
+      @include media-breakpoint(max-width, 767px) {
+        margin: 0 0 16px 0;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+
+      .bottom-menu-nav-link {
+        display: block;
+
+        @extend %font-footer-base;
+
+        @include hover-current() {
+          color: $white;
+        }
+      }
     }
   }
 }

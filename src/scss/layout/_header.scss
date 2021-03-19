@@ -56,7 +56,7 @@ header {
       padding-top: 17px;
     }
 
-    li {
+    > li {
       margin: 0;
       padding: 0 1.5rem 0 0;
 
@@ -69,7 +69,7 @@ header {
         padding: 0;
       }
 
-      a {
+      > a {
         display: block;
 
         color: $grey;
