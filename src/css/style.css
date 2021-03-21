@@ -255,16 +255,14 @@ main section {
 header {
   position: relative;
 
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   line-height: 1;
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-header section {
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 header section.main h1 {
