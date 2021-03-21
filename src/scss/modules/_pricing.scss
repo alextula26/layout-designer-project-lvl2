@@ -8,7 +8,7 @@
   }
 
   &-body {
-    padding: 27px 24px 19px 24px;
+    padding: 17px 24px;
 
     color: $white;
 
@@ -38,11 +38,12 @@
 
   &-value {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     margin-bottom: 40px;
 
     .price {
-      flex-basis: 50%;
       margin-right: 16px;
 
       font-size: $font-size-64;
@@ -52,7 +53,6 @@
     }
 
     .currency {
-      flex-basis: 50%;
       padding-top: 8px;
 
       font-size: $font-size-32;
@@ -64,7 +64,7 @@
 
   &-footer {
     margin-top: 64px;
-    margin-bottom: 35px;
+    margin-bottom: 48px;
 
     font-size: $font-size-13;
     line-height: $line-height-20;

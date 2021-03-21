@@ -738,7 +738,7 @@ footer {
 }
 
 .pricing-body {
-  padding: 27px 24px 19px 24px;
+  padding: 17px 24px;
 
   color: #fff;
 
@@ -766,11 +766,12 @@ footer {
 
 .pricing-value {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 40px;
 }
 
 .pricing-value .price {
-  flex-basis: 50%;
   margin-right: 16px;
 
   font-size: 64px;
@@ -779,7 +780,6 @@ footer {
 }
 
 .pricing-value .currency {
-  flex-basis: 50%;
   padding-top: 8px;
 
   font-size: 32px;
@@ -789,7 +789,7 @@ footer {
 
 .pricing-footer {
   margin-top: 64px;
-  margin-bottom: 35px;
+  margin-bottom: 48px;
 
   font-size: 12.8px;
   line-height: 19.2px;
@@ -1056,8 +1056,8 @@ footer {
   margin-bottom: 30px;
 }
 
-.mb-45 {
-  margin-bottom: 45px;
+.mb-46 {
+  margin-bottom: 46px;
 }
 
 .mb-49 {
