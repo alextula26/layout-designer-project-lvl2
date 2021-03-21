@@ -962,6 +962,10 @@ footer {
   flex-wrap: wrap;
 }
 
+.d-block {
+  display: block;
+}
+
 .font-size-16 {
   font-size: 16px;
 }
