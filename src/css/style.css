@@ -369,12 +369,12 @@ header section.artist h1 {
   }
 }
 
-h2 {
+h2.description {
   margin-bottom: 32px;
 }
 
 @media (max-width: 767px) {
-  h2 {
+  h2.description {
     margin-bottom: 16px;
   }
 }
