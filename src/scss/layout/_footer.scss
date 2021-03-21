@@ -16,10 +16,6 @@ footer {
 .top-menu {
   padding-bottom: 72px;
 
-  @include media-breakpoint(max-width, 767px) {
-    padding-bottom: 68px;
-  }
-
   &-title {
     margin-bottom: 15px;
 

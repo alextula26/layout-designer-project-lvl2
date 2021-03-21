@@ -418,12 +418,6 @@ footer {
   padding-bottom: 72px;
 }
 
-@media (max-width: 767px) {
-  .top-menu {
-    padding-bottom: 68px;
-  }
-}
-
 .top-menu-title {
   margin-bottom: 15px;
 
