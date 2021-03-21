@@ -52,7 +52,7 @@ header {
 
       @include media-breakpoint(max-width, 767px) {
         flex-direction: column;
-        padding-top: 17px;
+        padding-top: 16px;
       }
 
       &-item {

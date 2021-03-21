@@ -301,7 +301,7 @@ header section.artist h1 {
 @media (max-width: 767px) {
   .navbar .navbar-grid .nav {
     flex-direction: column;
-    padding-top: 17px;
+    padding-top: 16px;
   }
 }
 
@@ -309,7 +309,7 @@ header section.artist h1 {
   margin: 0;
   padding: 0 1.5rem 0 0;
 
-  line-height: 13px;
+  line-height: 12.89px;
 
   list-style: none;
 }
@@ -326,7 +326,7 @@ header section.artist h1 {
 
   color: #e0e0e0;
   font-size: 11px;
-  line-height: 13px;
+  line-height: 12.89px;
   text-transform: uppercase;
 }
 
@@ -359,7 +359,7 @@ header section.artist h1 {
   color: #fff;
   font-weight: 700;
   font-size: 11px;
-  line-height: 13px;
+  line-height: 12.89px;
   text-transform: uppercase;
 }
 
