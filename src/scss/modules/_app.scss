@@ -1,8 +1,8 @@
 .app {
   margin-bottom: 100px;
 
-  .app-content {
-    .app-descriptions {
+  &-body {
+    &-descriptions {
       order: 1;
       padding-top: 16px;
 
@@ -15,7 +15,7 @@
       }
     }
 
-    .app-image {
+    &-image {
       order: 2;
 
       @include media-breakpoint(max-width, 767px) {

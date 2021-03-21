@@ -891,7 +891,7 @@ footer {
   margin-bottom: 100px;
 }
 
-.app .app-content .app-descriptions {
+.app-body-descriptions {
   order: 1;
   padding-top: 16px;
 
@@ -900,18 +900,18 @@ footer {
 }
 
 @media (max-width: 767px) {
-  .app .app-content .app-descriptions {
+  .app-body-descriptions {
     order: 2 !important;
     padding-top: 0;
   }
 }
 
-.app .app-content .app-image {
+.app-body-image {
   order: 2;
 }
 
 @media (max-width: 767px) {
-  .app .app-content .app-image {
+  .app-body-image {
     order: 1 !important;
     margin-bottom: 16px;
   }
