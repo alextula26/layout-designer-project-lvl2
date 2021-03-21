@@ -9,26 +9,28 @@
     padding-right: 0;
   }
 
-  .popular-track {
+  &-item {
     display: grid;
     grid-template-columns: max-content max-content 1fr;
     align-items: center;
   }
 
-  .photo-track {
+  &-photo {
     width: 55px;
     height: 55px;
     margin-right: 15px;
   }
 
-  .info-track {
+  &-info {
     .title {
+      color: $white;
       font-size: inherit;
       line-height: inherit;
+      text-transform: uppercase;
     }
   }
 
-  .time {
+  &-time {
     text-align: right;
   }
 }

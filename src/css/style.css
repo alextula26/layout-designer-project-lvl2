@@ -931,24 +931,26 @@ footer {
   }
 }
 
-.popular-tracks .popular-track {
+.popular-tracks-item {
   display: grid;
   grid-template-columns: max-content max-content 1fr;
   align-items: center;
 }
 
-.popular-tracks .photo-track {
+.popular-tracks-photo {
   width: 55px;
   height: 55px;
   margin-right: 15px;
 }
 
-.popular-tracks .info-track .title {
+.popular-tracks-info .title {
+  color: #fff;
   font-size: inherit;
   line-height: inherit;
+  text-transform: uppercase;
 }
 
-.popular-tracks .time {
+.popular-tracks-time {
   text-align: right;
 }
 
