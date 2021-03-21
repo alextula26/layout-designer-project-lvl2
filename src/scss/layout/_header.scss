@@ -11,11 +11,15 @@ header {
   background-size: cover;
 
   section {
-    &.main h1 {
+    &.main {
       margin-top: 0;
+
+      @include media-breakpoint(max-width, 767px) {
+        margin-top: 50px;
+      }
     }
 
-    &.artist h1 {
+    &.artist {
       margin-top: 48px;
 
       @include media-breakpoint(max-width, 767px) {
@@ -115,7 +119,7 @@ header {
 
 .search {
   @include media-breakpoint(max-width, 767px) {
-    padding-top: 10px;
+    padding-top: 13px;
   }
 }
 

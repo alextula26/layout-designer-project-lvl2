@@ -255,16 +255,22 @@ header {
   background-size: cover;
 }
 
-header section.main h1 {
+header section.main {
   margin-top: 0;
 }
 
-header section.artist h1 {
+@media (max-width: 767px) {
+  header section.main {
+    margin-top: 50px;
+  }
+}
+
+header section.artist {
   margin-top: 48px;
 }
 
 @media (max-width: 767px) {
-  header section.artist h1 {
+  header section.artist {
     margin-top: 24px;
   }
 }
@@ -365,7 +371,7 @@ header section.artist h1 {
 
 @media (max-width: 767px) {
   .search {
-    padding-top: 10px;
+    padding-top: 13px;
   }
 }
 
