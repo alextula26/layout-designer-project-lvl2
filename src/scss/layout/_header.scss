@@ -30,61 +30,61 @@ header {
   top: 25px;
   right: 0;
   left: 0;
+
   z-index: 9999;
 
-  display: grid;
-  grid-template-columns: max-content 1fr 250px;
+  .navbar-grid {
+    display: grid;
+    grid-template-columns: max-content 1fr 250px;
 
-  @include media-breakpoint(max-width, 767px) {
-    right: 20px;
-    left: 20px;
-
-    grid-template-columns: 1fr;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 5px 0 7px 0;
-
-    list-style: none;
-
-    @include media-breakpoint(max-width, 767px) {
-      flex-direction: column;
-      padding-top: 17px;
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
     }
 
-    > li {
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
       margin: 0;
-      padding: 0 1.5rem 0 0;
-
-      line-height: $line-height-13;
+      padding: 5px 0 7px 0;
 
       list-style: none;
 
       @include media-breakpoint(max-width, 767px) {
-        align-self: flex-start;
-        padding: 0;
+        flex-direction: column;
+        padding-top: 17px;
       }
 
-      > a {
-        display: block;
+      > li {
+        margin: 0;
+        padding: 0 1.5rem 0 0;
 
-        color: $grey;
-
-        font-size: $font-size-11;
         line-height: $line-height-13;
-        text-transform: uppercase;
+
+        list-style: none;
 
         @include media-breakpoint(max-width, 767px) {
-          display: inline-block;
+          align-self: flex-start;
+          padding: 0;
         }
 
-        @include hover-current() {
-          color: $white;
-          font-weight: 700;
+        > a {
+          display: block;
+
+          color: $grey;
+
+          font-size: $font-size-11;
+          line-height: $line-height-13;
+          text-transform: uppercase;
+
+          @include media-breakpoint(max-width, 767px) {
+            display: inline-block;
+          }
+
+          @include hover-current() {
+            color: $white;
+            font-weight: 700;
+          }
         }
       }
     }

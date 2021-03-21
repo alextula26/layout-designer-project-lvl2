@@ -1,11 +1,3 @@
-header,
-main,
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 html,
 body {
   min-height: 100vh;
@@ -283,21 +275,20 @@ header section.artist h1 {
   right: 0;
   left: 0;
   z-index: 9999;
+}
 
+.navbar .navbar-grid {
   display: grid;
   grid-template-columns: max-content 1fr 250px;
 }
 
 @media (max-width: 767px) {
-  .navbar {
-    right: 20px;
-    left: 20px;
-
+  .navbar .navbar-grid {
     grid-template-columns: 1fr;
   }
 }
 
-.navbar ul {
+.navbar .navbar-grid ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -308,13 +299,13 @@ header section.artist h1 {
 }
 
 @media (max-width: 767px) {
-  .navbar ul {
+  .navbar .navbar-grid ul {
     flex-direction: column;
     padding-top: 17px;
   }
 }
 
-.navbar ul > li {
+.navbar .navbar-grid ul > li {
   margin: 0;
   padding: 0 1.5rem 0 0;
 
@@ -324,13 +315,13 @@ header section.artist h1 {
 }
 
 @media (max-width: 767px) {
-  .navbar ul > li {
+  .navbar .navbar-grid ul > li {
     align-self: flex-start;
     padding: 0;
   }
 }
 
-.navbar ul > li > a {
+.navbar .navbar-grid ul > li > a {
   display: block;
 
   color: #e0e0e0;
@@ -340,13 +331,13 @@ header section.artist h1 {
 }
 
 @media (max-width: 767px) {
-  .navbar ul > li > a {
+  .navbar .navbar-grid ul > li > a {
     display: inline-block;
   }
 }
 
-.navbar ul > li > a:hover,
-.navbar ul > li > a.current {
+.navbar .navbar-grid ul > li > a:hover,
+.navbar .navbar-grid ul > li > a.current {
   color: #fff;
   font-weight: 700;
 }
