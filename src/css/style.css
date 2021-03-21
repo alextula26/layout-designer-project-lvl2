@@ -697,32 +697,28 @@ footer {
   }
 }
 
-#page-similar {
+.similar-artists {
   margin-bottom: 75px;
 }
 
-#page-similar h2 {
-  margin-bottom: 23px;
-}
-
-#page-similar .similar-artists {
+.similar-artists-container {
   padding-right: 50px;
 }
 
-#page-similar .similar-artists .similar-item {
+.similar-artists-item {
   margin-top: 25px;
 }
 
-#page-similar .similar-artists .similar-item img {
+.similar-artists-item img {
   margin-bottom: 18px;
 }
 
-#page-similar .similar-artists .similar-item span {
+.similar-artists-item span {
   display: block;
 }
 
 @media (max-width: 767px) {
-  #page-similar .similar-artists .similar-item span {
+  .similar-artists-item span {
     display: inline-block;
   }
 }
@@ -1044,6 +1040,10 @@ footer {
 
 .mb-27 {
   margin-bottom: 27px;
+}
+
+.mb-23 {
+  margin-bottom: 23px;
 }
 
 .mb-30 {

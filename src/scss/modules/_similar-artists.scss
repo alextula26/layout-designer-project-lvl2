@@ -1,26 +1,22 @@
-#page-similar {
+.similar-artists {
   margin-bottom: 75px;
 
-  h2 {
-    margin-bottom: 23px;
+  &-container {
+    padding-right: 50px;
   }
 
-  .similar-artists {
-    padding-right: 50px;
+  &-item {
+    margin-top: 25px;
 
-    .similar-item {
-      margin-top: 25px;
+    img {
+      margin-bottom: 18px;
+    }
 
-      img {
-        margin-bottom: 18px;
-      }
+    span {
+      display: block;
 
-      span {
-        display: block;
-
-        @include media-breakpoint(max-width, 767px) {
-          display: inline-block;
-        }
+      @include media-breakpoint(max-width, 767px) {
+        display: inline-block;
       }
     }
   }
