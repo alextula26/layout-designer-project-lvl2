@@ -1,90 +1,94 @@
-.news-item {
-  margin-bottom: 16px;
-
-  @include media-breakpoint(max-width, 767px) {
-    margin-bottom: 65px;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.news-body {
-  margin-bottom: 24px;
-
-  .title {
-    margin-bottom: 30px;
-
-    font-weight: 400;
-
-    font-size: $font-size-30;
-    line-height: $line-height-45;
-
-    text-transform: capitalize;
+.news {
+  &-item {
+    margin-bottom: 16px;
 
     @include media-breakpoint(max-width, 767px) {
-      margin-bottom: 16px;
-
-      font-size: $font-size-16;
-      line-height: $line-height-24;
-    }
-  }
-}
-
-.news-footer {
-  .news-author {
-    margin-bottom: 48px;
-
-    font-size: $font-size-13;
-    line-height: $line-height-20;
-
-    .avatar {
-      display: inline-block;
-      width: 19px;
-      height: 19px;
-      margin-right: 16px;
-
-      vertical-align: middle;
+      margin-bottom: 65px;
     }
 
-    .author {
-      margin-right: 16px;
-
-      color: $orange;
-      text-transform: uppercase;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
-}
 
-.news-image-body {
-  .news-image {
-    width: 100%;
+  &-images-container {
+    &-image {
+      width: 100%;
+    }
+
+    .news-item:nth-child(even) & {
+      order: 2;
+    }
+
+    .news-item:nth-child(odd) & {
+      order: 1;
+    }
+
+    @include media-breakpoint(max-width, 767px) {
+      order: 1 !important;
+    }
   }
 
-  .news-item:nth-child(even) & {
-    order: 2;
-  }
+  &-content {
+    .news-item:nth-child(odd) & {
+      order: 2;
+    }
 
-  .news-item:nth-child(odd) & {
-    order: 1;
-  }
+    .news-item:nth-child(even) & {
+      order: 1;
+    }
 
-  @include media-breakpoint(max-width, 767px) {
-    order: 1 !important;
-  }
-}
+    @include media-breakpoint(max-width, 767px) {
+      order: 2 !important;
+    }
 
-.news-content {
-  .news-item:nth-child(odd) & {
-    order: 2;
-  }
+    &-body {
+      margin-bottom: 24px;
 
-  .news-item:nth-child(even) & {
-    order: 1;
-  }
+      .title {
+        margin-bottom: 30px;
 
-  @include media-breakpoint(max-width, 767px) {
-    order: 2 !important;
+        font-weight: 400;
+
+        font-size: $font-size-30;
+        line-height: $line-height-45;
+
+        text-transform: capitalize;
+
+        @include media-breakpoint(max-width, 767px) {
+          margin-bottom: 16px;
+
+          font-size: $font-size-16;
+          line-height: $line-height-24;
+        }
+      }
+    }
+
+    &-footer {
+      &-author {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 48px;
+
+        font-size: $font-size-13;
+        line-height: $line-height-20;
+
+        .avatar {
+          display: inline-block;
+          width: 19px;
+          height: 19px;
+          margin-right: 16px;
+
+          vertical-align: middle;
+        }
+
+        .author {
+          margin-right: 16px;
+
+          color: $orange;
+          text-transform: uppercase;
+        }
+      }
+    }
   }
 }
