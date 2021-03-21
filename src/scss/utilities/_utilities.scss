@@ -90,6 +90,10 @@
   margin-bottom: 30px;
 }
 
+.mb-45 {
+  margin-bottom: 45px;
+}
+
 .mb-49 {
   margin-bottom: 49px;
 }
@@ -111,15 +115,15 @@
 }
 
 .bg-free {
-  background: url("../images/subscribe_1.png");
+  background-image: url("../images/subscribe_1.png");
 }
 
 .bg-standart {
-  background: url("../images/subscribe_2.png");
+  background-image: url("../images/subscribe_2.png");
 }
 
 .bg-premium {
-  background: url("../images/subscribe_3.png");
+  background-image: url("../images/subscribe_3.png");
 }
 
 .bg-main {
