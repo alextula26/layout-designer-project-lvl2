@@ -1,9 +1,3 @@
-%flex-base-center {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 html,
 body {
   min-height: 100vh;
@@ -14,15 +8,12 @@ body {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  @include display-flex(column, wrap, space-between);
 
   margin: 0;
 
   color: $dark-grey;
-  font-family: "Roboto", sans-serif;
+  font-family: $base-fonts;
 
   background-color: $dark;
 }
@@ -89,12 +80,6 @@ hr {
   text-transform: uppercase;
 }
 
-%flex-center {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 @for $i from 1 through $grid-columns {
   h#{$i},
   .h#{$i} {
@@ -117,15 +102,7 @@ h3 {
 main {
   flex-grow: 1;
 
-  @extend %flex-center;
-}
-
-header {
-  @extend %flex-center;
-}
-
-footer {
-  @extend %flex-center;
+  @include display-flex(row, wrap, center);
 }
 
 section {
@@ -149,30 +126,6 @@ section {
 
   main & {
     padding-top: 100px;
-  }
-}
-
-.container {
-  position: relative;
-
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-
-  @media (max-width: 767px) {
-    padding: 0 20px;
-  }
-
-  @media (min-width: 768px) {
-    max-width: 740px;
-  }
-
-  @media (min-width: 992px) {
-    max-width: 960px;
-  }
-
-  @media (min-width: 1240px) {
-    max-width: 1200px;
   }
 }
 

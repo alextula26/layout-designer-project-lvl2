@@ -1,6 +1,8 @@
 header {
   position: relative;
 
+  @include display-flex(row, wrap, center);
+
   padding-top: 200px;
   padding-bottom: 200px;
 
@@ -30,16 +32,14 @@ header {
 }
 
 .navbar {
+  @include display-flex(row, wrap, center);
+
   position: absolute;
   top: 25px;
   right: 0;
   left: 0;
 
   z-index: 9999;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 
   .navbar-grid {
     display: grid;
@@ -50,9 +50,8 @@ header {
     }
 
     .nav {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      @include display-flex();
+
       margin: 0;
       padding: 5px 0 7px 0;
 
@@ -100,8 +99,7 @@ header {
 }
 
 .logo {
-  display: flex;
-  flex-wrap: wrap;
+  @include display-flex();
 
   .image {
     width: 24px;

@@ -66,8 +66,8 @@
 
     &-footer {
       &-author {
-        display: flex;
-        flex-wrap: wrap;
+        @include display-flex();
+
         margin-bottom: 48px;
 
         font-size: $font-size-13;

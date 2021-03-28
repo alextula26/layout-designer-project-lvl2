@@ -4,6 +4,8 @@
 }
 
 footer {
+  @include display-flex(row, wrap, center);
+
   padding: 62px 0 48px 0;
 
   @include media-breakpoint(max-width, 767px) {
@@ -32,13 +34,11 @@ footer {
       margin-bottom: 31px;
     }
 
-    &-item {
+    & * {
       @extend %font-footer-base;
     }
 
     &-link {
-      @extend %font-footer-base;
-
       @include hover-current() {
         color: $white;
       }
@@ -46,8 +46,7 @@ footer {
   }
 
   &-social {
-    display: flex;
-    flex-wrap: wrap;
+    @include display-flex();
 
     &-link {
       margin-right: 24px;
@@ -60,19 +59,18 @@ footer {
 
   &-nav {
     @include ul-reset();
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include display-flex();
 
     @include media-breakpoint(max-width, 767px) {
       flex-direction: column;
     }
 
+    & * {
+      @extend %font-footer-base;
+    }
+
     &-item {
       margin: 0 15px 0 0;
-
-      @extend %font-footer-base;
 
       @include media-breakpoint(max-width, 767px) {
         margin: 0 0 16px 0;
@@ -85,8 +83,6 @@ footer {
 
     &-link {
       display: block;
-
-      @extend %font-footer-base;
 
       @include hover-current() {
         color: $white;

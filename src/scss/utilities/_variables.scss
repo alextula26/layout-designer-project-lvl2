@@ -13,8 +13,11 @@ $grid-columns: 4;
 $grid-gutter-width-base: 25px;
 $grid-breakpoints: (
   xs: 0,
-  sm: 767px
+  sm: 767px,
 );
+
+$base-fonts: "Roboto", sans-serif;
+$form-fonts: arial, helvetica, sans-serif;
 
 $font-size-11: 11px;
 $font-size-13: 12.8px;

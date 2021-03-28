@@ -37,9 +37,7 @@
   }
 
   &-value {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include display-flex(row, wrap, center);
 
     margin-bottom: 41px;
 

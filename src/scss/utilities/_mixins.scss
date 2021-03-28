@@ -32,6 +32,13 @@
   }
 }
 
+@mixin display-flex($flex-direction: row, $lex-wrap: wrap, $justify-content: flex-start) {
+  display: flex;
+  flex-direction: $flex-direction;
+  flex-wrap: $lex-wrap;
+  justify-content: $justify-content;
+}
+
 @mixin make-grid-row($gutters: $grid-gutter-width-base) {
   .row {
     display: flex;
