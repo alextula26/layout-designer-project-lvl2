@@ -37,6 +37,10 @@ header {
 
   z-index: 9999;
 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
   .navbar-grid {
     display: grid;
     grid-template-columns: max-content 1fr 250px;

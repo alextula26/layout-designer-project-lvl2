@@ -315,6 +315,10 @@ header section.artist {
   right: 0;
   left: 0;
   z-index: 9999;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .navbar .navbar-grid {
