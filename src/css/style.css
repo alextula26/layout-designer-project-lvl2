@@ -277,6 +277,10 @@ header section.artist {
   }
 }
 
+header section.artist h1 {
+  margin-bottom: 16px;
+}
+
 .navbar {
   position: absolute;
   top: 25px;
@@ -979,12 +983,15 @@ footer {
   padding-right: 50px;
 }
 
-.d-flex {
-  display: flex;
+.discography-image {
+  margin-bottom: 18px;
 }
 
-.flex-wrap {
+.d-flex {
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .d-block {
@@ -993,10 +1000,6 @@ footer {
 
 .font-size-16 {
   font-size: 16px;
-}
-
-.font-size-18 {
-  font-size: 18px;
 }
 
 .line-height-16 {
@@ -1009,18 +1012,6 @@ footer {
 
 .line-height-24 {
   line-height: 24px;
-}
-
-.line-height-27 {
-  line-height: 27px;
-}
-
-.font-weight-400 {
-  font-weight: 400;
-}
-
-.font-weight-700 {
-  font-weight: 700;
 }
 
 .text-left {
@@ -1049,10 +1040,6 @@ footer {
 
 .grey {
   color: #e0e0e0;
-}
-
-.mb-16 {
-  margin-bottom: 16px;
 }
 
 .mb-18 {

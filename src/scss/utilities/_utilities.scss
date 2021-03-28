@@ -1,9 +1,5 @@
 .d-flex {
-  display: flex;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
+  @include display-flex();
 }
 
 .d-block {
@@ -12,10 +8,6 @@
 
 .font-size-16 {
   font-size: $font-size-16;
-}
-
-.font-size-18 {
-  font-size: $font-size-18;
 }
 
 .line-height-16 {
@@ -28,18 +20,6 @@
 
 .line-height-24 {
   line-height: $line-height-24;
-}
-
-.line-height-27 {
-  line-height: $line-height-27;
-}
-
-.font-weight-400 {
-  font-weight: 400;
-}
-
-.font-weight-700 {
-  font-weight: 700;
 }
 
 .text-left {
@@ -68,10 +48,6 @@
 
 .grey {
   color: $grey;
-}
-
-.mb-16 {
-  margin-bottom: 16px;
 }
 
 .mb-18 {
