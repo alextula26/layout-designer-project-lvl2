@@ -744,10 +744,6 @@ footer {
 
 .pricing-item {
   margin-bottom: 38px;
-
-  /* &:last-child {
-    margin-bottom: 43px;
-  } */
 }
 
 @media (max-width: 767px) {
