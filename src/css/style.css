@@ -747,7 +747,7 @@ footer {
 }
 
 .pricing-body {
-  padding: 24px 24px;
+  padding: 24px;
 
   color: #fff;
 
@@ -755,6 +755,12 @@ footer {
   background-position: 0 0;
   background-size: cover;
   border-radius: 1rem;
+}
+
+@media (max-width: 767px) {
+  .pricing-body {
+    padding: 17px 24px;
+  }
 }
 
 .pricing-body .title {
@@ -808,12 +814,17 @@ footer {
 
 .news-item {
   margin-bottom: 16px;
+  padding-top: 49px;
 }
 
 @media (max-width: 767px) {
   .news-item {
     margin-bottom: 65px;
   }
+}
+
+.news-item:first-child {
+  padding-top: 0;
 }
 
 .news-item:last-child {
@@ -835,6 +846,7 @@ footer {
 @media (max-width: 767px) {
   .news-images-container {
     order: 1 !important;
+    margin-bottom: 49px;
   }
 }
 
