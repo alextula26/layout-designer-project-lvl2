@@ -1,15 +1,6 @@
 .news {
   &-item {
-    margin-bottom: 16px;
-    padding-top: 49px;
-
-    @include media-breakpoint(max-width, 767px) {
-      margin-bottom: 65px;
-    }
-
-    &:first-child {
-      padding-top: 0;
-    }
+    margin-bottom: 65px;
 
     &:last-child {
       margin-bottom: 0;

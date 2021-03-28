@@ -819,18 +819,7 @@ footer {
 }
 
 .news-item {
-  margin-bottom: 16px;
-  padding-top: 49px;
-}
-
-@media (max-width: 767px) {
-  .news-item {
-    margin-bottom: 65px;
-  }
-}
-
-.news-item:first-child {
-  padding-top: 0;
+  margin-bottom: 65px;
 }
 
 .news-item:last-child {
