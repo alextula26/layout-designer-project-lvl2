@@ -124,6 +124,10 @@ header {
   @extend %flex-center;
 }
 
+footer {
+  @extend %flex-center;
+}
+
 section {
   position: relative;
 
@@ -143,7 +147,7 @@ section {
     max-width: 1240px;
   }
 
-  & section {
+  main & {
     padding-top: 100px;
   }
 }

@@ -87,6 +87,7 @@ h1,
   text-transform: uppercase;
 }
 
+footer,
 header,
 main {
   display: flex;
@@ -160,7 +161,7 @@ section {
   }
 }
 
-section section {
+main section {
   padding-top: 100px;
 }
 
