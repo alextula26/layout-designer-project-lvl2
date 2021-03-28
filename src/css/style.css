@@ -765,7 +765,7 @@ footer {
 
 @media (max-width: 767px) {
   .pricing-body {
-    padding: 17px 24px;
+    padding-top: 17px;
   }
 }
 

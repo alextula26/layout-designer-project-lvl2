@@ -24,7 +24,7 @@
     border-radius: 1rem;
 
     @include media-breakpoint(max-width, 767px) {
-      padding: 17px 24px;
+      padding-top: 17px;
     }
 
     .title {
