@@ -124,10 +124,15 @@ h3 {
 }
 
 main {
+  display: flex;
   flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 main section {
+  flex: 0 0 1240px;
+  max-width: 1240px;
   padding-top: 100px;
 }
 
